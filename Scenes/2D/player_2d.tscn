@@ -750,7 +750,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2q1nc"]
-size = Vector2(14, 13)
+size = Vector2(14, 10)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hma4t"]
 
@@ -759,13 +759,17 @@ collision_layer = 2
 collision_mask = 5
 motion_mode = 1
 script = ExtResource("1_dabdu")
+speed = 100.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+y_sort_enabled = true
 sprite_frames = SubResource("SpriteFrames_lm0pw")
 animation = &"idle_right_down"
+autoplay = "idle_right_down"
+offset = Vector2(0, -12)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 4.5)
+position = Vector2(0, -5)
 shape = SubResource("RectangleShape2D_2q1nc")
 
 [node name="detectionArea2D" type="Area2D" parent="."]
@@ -773,7 +777,7 @@ collision_layer = 2
 collision_mask = 4
 
 [node name="detection" type="CollisionShape2D" parent="detectionArea2D"]
-position = Vector2(10, 0)
+position = Vector2(10, -10)
 shape = SubResource("CircleShape2D_hma4t")
 
 [node name="Camera2D" type="Camera2D" parent="."]
