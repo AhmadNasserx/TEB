@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ddl5l3xpfeg0k"
+path="res://.godot/imported/Office_Misc_Coffee_Machine_01.obj-c3cac337f6248ee83b1330d7b6decfeb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Misc_Coffee_Machine_01.obj-c3cac337f6248ee83b1330d7b6decfeb.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Misc/Coffee/Office_Misc_Coffee_Machine_01.obj"
+dest_files=["res://.godot/imported/Office_Misc_Coffee_Machine_01.obj-c3cac337f6248ee83b1330d7b6decfeb.mesh", "res://.godot/imported/Office_Misc_Coffee_Machine_01.obj-c3cac337f6248ee83b1330d7b6decfeb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

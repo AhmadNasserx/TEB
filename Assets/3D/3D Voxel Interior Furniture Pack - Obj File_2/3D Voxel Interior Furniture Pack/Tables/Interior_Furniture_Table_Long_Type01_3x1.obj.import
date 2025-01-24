@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cuqhs6360ansf"
+path="res://.godot/imported/Interior_Furniture_Table_Long_Type01_3x1.obj-0966a5361377ff00f4e661519bbde620.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Interior_Furniture_Table_Long_Type01_3x1.obj-0966a5361377ff00f4e661519bbde620.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Interior Furniture Pack - Obj File_2/3D Voxel Interior Furniture Pack/Tables/Interior_Furniture_Table_Long_Type01_3x1.obj"
+dest_files=["res://.godot/imported/Interior_Furniture_Table_Long_Type01_3x1.obj-0966a5361377ff00f4e661519bbde620.mesh", "res://.godot/imported/Interior_Furniture_Table_Long_Type01_3x1.obj-0966a5361377ff00f4e661519bbde620.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

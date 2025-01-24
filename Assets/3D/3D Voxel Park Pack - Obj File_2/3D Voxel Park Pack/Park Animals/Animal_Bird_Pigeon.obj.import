@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cl4ul47548h0y"
+path="res://.godot/imported/Animal_Bird_Pigeon.obj-bac9055803ec3500c1f78cf8d5439075.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Animal_Bird_Pigeon.obj-bac9055803ec3500c1f78cf8d5439075.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Park Pack - Obj File_2/3D Voxel Park Pack/Park Animals/Animal_Bird_Pigeon.obj"
+dest_files=["res://.godot/imported/Animal_Bird_Pigeon.obj-bac9055803ec3500c1f78cf8d5439075.mesh", "res://.godot/imported/Animal_Bird_Pigeon.obj-bac9055803ec3500c1f78cf8d5439075.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

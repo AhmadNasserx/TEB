@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bhookgu4i8vpo"
+path="res://.godot/imported/Office_Misc_Piece_Door_Panel_02.obj-72d3b8239e72c4c44e7e1c4f4cd3ac73.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Misc_Piece_Door_Panel_02.obj-72d3b8239e72c4c44e7e1c4f4cd3ac73.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Misc/Fragments/Office_Misc_Piece_Door_Panel_02.obj"
+dest_files=["res://.godot/imported/Office_Misc_Piece_Door_Panel_02.obj-72d3b8239e72c4c44e7e1c4f4cd3ac73.mesh", "res://.godot/imported/Office_Misc_Piece_Door_Panel_02.obj-72d3b8239e72c4c44e7e1c4f4cd3ac73.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

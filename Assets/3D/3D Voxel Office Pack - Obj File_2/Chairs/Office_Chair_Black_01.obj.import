@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dp2corryfejag"
+path="res://.godot/imported/Office_Chair_Black_01.obj-dc73f862e50226364346e22a2bfd86cf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Chair_Black_01.obj-dc73f862e50226364346e22a2bfd86cf.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Chairs/Office_Chair_Black_01.obj"
+dest_files=["res://.godot/imported/Office_Chair_Black_01.obj-dc73f862e50226364346e22a2bfd86cf.mesh", "res://.godot/imported/Office_Chair_Black_01.obj-dc73f862e50226364346e22a2bfd86cf.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

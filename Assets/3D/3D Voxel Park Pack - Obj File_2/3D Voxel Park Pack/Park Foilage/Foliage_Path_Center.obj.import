@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dcv2u5wk4c0ex"
+path="res://.godot/imported/Foliage_Path_Center.obj-6b69d754e31b995a7db1a1f41da59190.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Foliage_Path_Center.obj-6b69d754e31b995a7db1a1f41da59190.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Park Pack - Obj File_2/3D Voxel Park Pack/Park Foilage/Foliage_Path_Center.obj"
+dest_files=["res://.godot/imported/Foliage_Path_Center.obj-6b69d754e31b995a7db1a1f41da59190.mesh", "res://.godot/imported/Foliage_Path_Center.obj-6b69d754e31b995a7db1a1f41da59190.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

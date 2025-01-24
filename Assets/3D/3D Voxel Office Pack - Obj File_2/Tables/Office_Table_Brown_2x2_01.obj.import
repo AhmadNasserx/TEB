@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://hp5n15cixypb"
+path="res://.godot/imported/Office_Table_Brown_2x2_01.obj-382453649c8d4a33ae080414a857c1dd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Table_Brown_2x2_01.obj-382453649c8d4a33ae080414a857c1dd.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Tables/Office_Table_Brown_2x2_01.obj"
+dest_files=["res://.godot/imported/Office_Table_Brown_2x2_01.obj-382453649c8d4a33ae080414a857c1dd.mesh", "res://.godot/imported/Office_Table_Brown_2x2_01.obj-382453649c8d4a33ae080414a857c1dd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://74pgousikldg"
+path="res://.godot/imported/Office_Couch_Brown_02.obj-0e96a2d83224e8b1c36e3df03453854d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Couch_Brown_02.obj-0e96a2d83224e8b1c36e3df03453854d.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Chairs/Office_Couch_Brown_02.obj"
+dest_files=["res://.godot/imported/Office_Couch_Brown_02.obj-0e96a2d83224e8b1c36e3df03453854d.mesh", "res://.godot/imported/Office_Couch_Brown_02.obj-0e96a2d83224e8b1c36e3df03453854d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

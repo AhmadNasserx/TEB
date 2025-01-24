@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cwxykvlkbde2m"
+path="res://.godot/imported/Interior_Furniture_Chair_13.obj-6b60d0eb86f58c6fdd243661c9ee2447.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Interior_Furniture_Chair_13.obj-6b60d0eb86f58c6fdd243661c9ee2447.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Interior Furniture Pack - Obj File_2/3D Voxel Interior Furniture Pack/Chairs/Interior_Furniture_Chair_13.obj"
+dest_files=["res://.godot/imported/Interior_Furniture_Chair_13.obj-6b60d0eb86f58c6fdd243661c9ee2447.mesh", "res://.godot/imported/Interior_Furniture_Chair_13.obj-6b60d0eb86f58c6fdd243661c9ee2447.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dvphe2ib5x4gm"
+path="res://.godot/imported/Office_Cubicle_Regular_01.obj-221d367c5b9c7a26f11d1ab6802b3fcb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Cubicle_Regular_01.obj-221d367c5b9c7a26f11d1ab6802b3fcb.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Cubicles/Office_Cubicle_Regular_01.obj"
+dest_files=["res://.godot/imported/Office_Cubicle_Regular_01.obj-221d367c5b9c7a26f11d1ab6802b3fcb.mesh", "res://.godot/imported/Office_Cubicle_Regular_01.obj-221d367c5b9c7a26f11d1ab6802b3fcb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

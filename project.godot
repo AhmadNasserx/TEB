@@ -23,3 +23,12 @@ PlayerManager="*res://Singeltons/PlayerManager.gd"
 SaveManager="*res://Singeltons/SaveManager.gd"
 SceneManager="*res://Singeltons/SceneManager.gd"
 UiManager="*res://Singeltons/UIManager.gd"
+
+[layer_names]
+
+2d_physics/layer_1="world"
+3d_physics/layer_1="world"
+2d_physics/layer_2="player"
+3d_physics/layer_2="player"
+2d_physics/layer_3="objects"
+3d_physics/layer_3="objects"

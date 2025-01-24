@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b0yadykua7o0t"
+path="res://.godot/imported/Foliage_Grass.obj-6dddd69a03c732b0206445bf20e68bfd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Foliage_Grass.obj-6dddd69a03c732b0206445bf20e68bfd.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Park Pack - Obj File_2/3D Voxel Park Pack/Park Foilage/Foliage_Grass.obj"
+dest_files=["res://.godot/imported/Foliage_Grass.obj-6dddd69a03c732b0206445bf20e68bfd.mesh", "res://.godot/imported/Foliage_Grass.obj-6dddd69a03c732b0206445bf20e68bfd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

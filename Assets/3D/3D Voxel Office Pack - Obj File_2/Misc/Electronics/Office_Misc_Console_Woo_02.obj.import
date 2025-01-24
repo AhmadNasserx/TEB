@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cgoehcc0ktun0"
+path="res://.godot/imported/Office_Misc_Console_Woo_02.obj-ff4374daa7875c37db374c68c8271ebd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Misc_Console_Woo_02.obj-ff4374daa7875c37db374c68c8271ebd.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Misc/Electronics/Office_Misc_Console_Woo_02.obj"
+dest_files=["res://.godot/imported/Office_Misc_Console_Woo_02.obj-ff4374daa7875c37db374c68c8271ebd.mesh", "res://.godot/imported/Office_Misc_Console_Woo_02.obj-ff4374daa7875c37db374c68c8271ebd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

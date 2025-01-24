@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c6phe36ffq4t7"
+path="res://.godot/imported/Office_Misc_Trashcan_Big_01.obj-d43bc05f2fa8d522a2429ddf27e103ca.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Misc_Trashcan_Big_01.obj-d43bc05f2fa8d522a2429ddf27e103ca.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Misc/Trashcans/Office_Misc_Trashcan_Big_01.obj"
+dest_files=["res://.godot/imported/Office_Misc_Trashcan_Big_01.obj-d43bc05f2fa8d522a2429ddf27e103ca.mesh", "res://.godot/imported/Office_Misc_Trashcan_Big_01.obj-d43bc05f2fa8d522a2429ddf27e103ca.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

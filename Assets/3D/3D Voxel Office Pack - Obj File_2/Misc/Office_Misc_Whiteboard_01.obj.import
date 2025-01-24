@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c8yj2a8xdwtj7"
+path="res://.godot/imported/Office_Misc_Whiteboard_01.obj-05622afd2434ca409cbfaa084ecd3ade.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Misc_Whiteboard_01.obj-05622afd2434ca409cbfaa084ecd3ade.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Misc/Office_Misc_Whiteboard_01.obj"
+dest_files=["res://.godot/imported/Office_Misc_Whiteboard_01.obj-05622afd2434ca409cbfaa084ecd3ade.mesh", "res://.godot/imported/Office_Misc_Whiteboard_01.obj-05622afd2434ca409cbfaa084ecd3ade.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

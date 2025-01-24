@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bap3f1ubfdhsc"
+path="res://.godot/imported/Office_Misc_Door_02.obj-272e3690aad605c5f265c226cf7d1908.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Misc_Door_02.obj-272e3690aad605c5f265c226cf7d1908.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Misc/Office_Misc_Door_02.obj"
+dest_files=["res://.godot/imported/Office_Misc_Door_02.obj-272e3690aad605c5f265c226cf7d1908.mesh", "res://.godot/imported/Office_Misc_Door_02.obj-272e3690aad605c5f265c226cf7d1908.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://casrv3oar56ce"
+path="res://.godot/imported/Animal_Bird_Dove_01.obj-b4d2a6202541acafbf7f34fffcd2a4a1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Animal_Bird_Dove_01.obj-b4d2a6202541acafbf7f34fffcd2a4a1.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Park Pack - Obj File_2/3D Voxel Park Pack/Park Animals/Animal_Bird_Dove_01.obj"
+dest_files=["res://.godot/imported/Animal_Bird_Dove_01.obj-b4d2a6202541acafbf7f34fffcd2a4a1.mesh", "res://.godot/imported/Animal_Bird_Dove_01.obj-b4d2a6202541acafbf7f34fffcd2a4a1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

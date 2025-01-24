@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bdsa064xjibi2"
+path="res://.godot/imported/Office_Misc_Wall_Corkboard_01.obj-eb9cacc1edc93b5f660e89b56b1ecf7e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Misc_Wall_Corkboard_01.obj-eb9cacc1edc93b5f660e89b56b1ecf7e.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Misc/Office_Misc_Wall_Corkboard_01.obj"
+dest_files=["res://.godot/imported/Office_Misc_Wall_Corkboard_01.obj-eb9cacc1edc93b5f660e89b56b1ecf7e.mesh", "res://.godot/imported/Office_Misc_Wall_Corkboard_01.obj-eb9cacc1edc93b5f660e89b56b1ecf7e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

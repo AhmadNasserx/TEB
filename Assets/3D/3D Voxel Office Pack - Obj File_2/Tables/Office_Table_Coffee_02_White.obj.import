@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b3dsbjevy803x"
+path="res://.godot/imported/Office_Table_Coffee_02_White.obj-8aa3212382041844501664e343e3e490.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Table_Coffee_02_White.obj-8aa3212382041844501664e343e3e490.mesh"]
+
+source_file="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Tables/Office_Table_Coffee_02_White.obj"
+dest_files=["res://.godot/imported/Office_Table_Coffee_02_White.obj-8aa3212382041844501664e343e3e490.mesh", "res://.godot/imported/Office_Table_Coffee_02_White.obj-8aa3212382041844501664e343e3e490.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

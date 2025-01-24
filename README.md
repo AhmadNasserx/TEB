@@ -8,3 +8,4 @@ Assets used:
 	https://mariaisme.itch.io/3d-voxel-park
 	https://mariaisme.itch.io/3d-voxel-furniture
 	https://penzilla.itch.io/top-down-retro-interior
+	https://kenney.nl/assets/ui-pack-pixel-adventure
