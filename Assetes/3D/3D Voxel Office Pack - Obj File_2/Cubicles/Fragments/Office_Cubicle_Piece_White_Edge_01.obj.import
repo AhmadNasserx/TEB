@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bvo2qfyc5exe5"
+path="res://.godot/imported/Office_Cubicle_Piece_White_Edge_01.obj-7f7a0d3f50a45736f129105b1a90f3bf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Cubicle_Piece_White_Edge_01.obj-7f7a0d3f50a45736f129105b1a90f3bf.mesh"]
+
+source_file="res://Assetes/3D/3D Voxel Office Pack - Obj File_2/Cubicles/Fragments/Office_Cubicle_Piece_White_Edge_01.obj"
+dest_files=["res://.godot/imported/Office_Cubicle_Piece_White_Edge_01.obj-7f7a0d3f50a45736f129105b1a90f3bf.mesh", "res://.godot/imported/Office_Cubicle_Piece_White_Edge_01.obj-7f7a0d3f50a45736f129105b1a90f3bf.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

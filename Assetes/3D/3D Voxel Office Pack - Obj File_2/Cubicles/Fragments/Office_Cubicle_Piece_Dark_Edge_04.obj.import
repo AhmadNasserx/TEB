@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://6spt8qfakeks"
+path="res://.godot/imported/Office_Cubicle_Piece_Dark_Edge_04.obj-6890a43099e73aa933bfa2e9ffe62f41.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Cubicle_Piece_Dark_Edge_04.obj-6890a43099e73aa933bfa2e9ffe62f41.mesh"]
+
+source_file="res://Assetes/3D/3D Voxel Office Pack - Obj File_2/Cubicles/Fragments/Office_Cubicle_Piece_Dark_Edge_04.obj"
+dest_files=["res://.godot/imported/Office_Cubicle_Piece_Dark_Edge_04.obj-6890a43099e73aa933bfa2e9ffe62f41.mesh", "res://.godot/imported/Office_Cubicle_Piece_Dark_Edge_04.obj-6890a43099e73aa933bfa2e9ffe62f41.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

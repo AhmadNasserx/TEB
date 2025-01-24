@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://834bwjtpyjft"
+path="res://.godot/imported/Office_Misc_Console_Woo_Remote.obj-ecc59a8bdf47cd482966f2c2c502e0c8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Misc_Console_Woo_Remote.obj-ecc59a8bdf47cd482966f2c2c502e0c8.mesh"]
+
+source_file="res://Assetes/3D/3D Voxel Office Pack - Obj File_2/Misc/Electronics/Office_Misc_Console_Woo_Remote.obj"
+dest_files=["res://.godot/imported/Office_Misc_Console_Woo_Remote.obj-ecc59a8bdf47cd482966f2c2c502e0c8.mesh", "res://.godot/imported/Office_Misc_Console_Woo_Remote.obj-ecc59a8bdf47cd482966f2c2c502e0c8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

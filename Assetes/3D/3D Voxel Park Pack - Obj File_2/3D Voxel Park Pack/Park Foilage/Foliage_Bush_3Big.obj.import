@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b7d584j7m4k5r"
+path="res://.godot/imported/Foliage_Bush_3Big.obj-9f0a8b83ed2f9aca6b96d05743b8dd5d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Foliage_Bush_3Big.obj-9f0a8b83ed2f9aca6b96d05743b8dd5d.mesh"]
+
+source_file="res://Assetes/3D/3D Voxel Park Pack - Obj File_2/3D Voxel Park Pack/Park Foilage/Foliage_Bush_3Big.obj"
+dest_files=["res://.godot/imported/Foliage_Bush_3Big.obj-9f0a8b83ed2f9aca6b96d05743b8dd5d.mesh", "res://.godot/imported/Foliage_Bush_3Big.obj-9f0a8b83ed2f9aca6b96d05743b8dd5d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://jys25ao2g7bl"
+path="res://.godot/imported/Picnic_Grill_Coal.obj-1e824be9173c2a578b5682836d08fa7e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Picnic_Grill_Coal.obj-1e824be9173c2a578b5682836d08fa7e.mesh"]
+
+source_file="res://Assetes/3D/3D Voxel Park Pack - Obj File_2/3D Voxel Park Pack/Park Picnic/Picnic_Grill_Coal.obj"
+dest_files=["res://.godot/imported/Picnic_Grill_Coal.obj-1e824be9173c2a578b5682836d08fa7e.mesh", "res://.godot/imported/Picnic_Grill_Coal.obj-1e824be9173c2a578b5682836d08fa7e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dqythgjfkwc8o"
+path="res://.godot/imported/Office_Misc_Notebook.obj-1d09031afafd4cb0f0bad72927e78c73.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Misc_Notebook.obj-1d09031afafd4cb0f0bad72927e78c73.mesh"]
+
+source_file="res://Assetes/3D/3D Voxel Office Pack - Obj File_2/Misc/Office_Misc_Notebook.obj"
+dest_files=["res://.godot/imported/Office_Misc_Notebook.obj-1d09031afafd4cb0f0bad72927e78c73.mesh", "res://.godot/imported/Office_Misc_Notebook.obj-1d09031afafd4cb0f0bad72927e78c73.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

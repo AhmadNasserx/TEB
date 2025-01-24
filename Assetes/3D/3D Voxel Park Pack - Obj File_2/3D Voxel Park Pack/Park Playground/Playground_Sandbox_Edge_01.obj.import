@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bcgcruqo4cniw"
+path="res://.godot/imported/Playground_Sandbox_Edge_01.obj-04d21829e366e4b6fc5893e5ce562da6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Playground_Sandbox_Edge_01.obj-04d21829e366e4b6fc5893e5ce562da6.mesh"]
+
+source_file="res://Assetes/3D/3D Voxel Park Pack - Obj File_2/3D Voxel Park Pack/Park Playground/Playground_Sandbox_Edge_01.obj"
+dest_files=["res://.godot/imported/Playground_Sandbox_Edge_01.obj-04d21829e366e4b6fc5893e5ce562da6.mesh", "res://.godot/imported/Playground_Sandbox_Edge_01.obj-04d21829e366e4b6fc5893e5ce562da6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

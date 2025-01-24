@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://e0ggl8kyqjmf"
+path="res://.godot/imported/Picnic_Plate_01.obj-5febee9c3ff298815053efa5619287e9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Picnic_Plate_01.obj-5febee9c3ff298815053efa5619287e9.mesh"]
+
+source_file="res://Assetes/3D/3D Voxel Park Pack - Obj File_2/3D Voxel Park Pack/Park Picnic/Picnic_Plate_01.obj"
+dest_files=["res://.godot/imported/Picnic_Plate_01.obj-5febee9c3ff298815053efa5619287e9.mesh", "res://.godot/imported/Picnic_Plate_01.obj-5febee9c3ff298815053efa5619287e9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b7c1yygjc30h0"
+path="res://.godot/imported/Foliage_Flowers_01.obj-1ec1de7e2a31fda6f9bdaefedc8337da.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Foliage_Flowers_01.obj-1ec1de7e2a31fda6f9bdaefedc8337da.mesh"]
+
+source_file="res://Assetes/3D/3D Voxel Park Pack - Obj File_2/3D Voxel Park Pack/Park Foilage/Foliage_Flowers_01.obj"
+dest_files=["res://.godot/imported/Foliage_Flowers_01.obj-1ec1de7e2a31fda6f9bdaefedc8337da.mesh", "res://.godot/imported/Foliage_Flowers_01.obj-1ec1de7e2a31fda6f9bdaefedc8337da.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

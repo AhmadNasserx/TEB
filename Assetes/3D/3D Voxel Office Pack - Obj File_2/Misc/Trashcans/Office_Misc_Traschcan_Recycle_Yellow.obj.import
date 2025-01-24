@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dhaca4tn6brbu"
+path="res://.godot/imported/Office_Misc_Traschcan_Recycle_Yellow.obj-39a66affbb2ddace5d26d7c508a101ae.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Misc_Traschcan_Recycle_Yellow.obj-39a66affbb2ddace5d26d7c508a101ae.mesh"]
+
+source_file="res://Assetes/3D/3D Voxel Office Pack - Obj File_2/Misc/Trashcans/Office_Misc_Traschcan_Recycle_Yellow.obj"
+dest_files=["res://.godot/imported/Office_Misc_Traschcan_Recycle_Yellow.obj-39a66affbb2ddace5d26d7c508a101ae.mesh", "res://.godot/imported/Office_Misc_Traschcan_Recycle_Yellow.obj-39a66affbb2ddace5d26d7c508a101ae.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

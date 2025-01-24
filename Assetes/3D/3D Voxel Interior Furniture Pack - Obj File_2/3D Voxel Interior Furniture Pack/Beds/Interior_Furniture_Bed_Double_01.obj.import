@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d1rpkx7scqc0q"
+path="res://.godot/imported/Interior_Furniture_Bed_Double_01.obj-e8fc4ce4f552faccf987f217dba9d827.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Interior_Furniture_Bed_Double_01.obj-e8fc4ce4f552faccf987f217dba9d827.mesh"]
+
+source_file="res://Assetes/3D/3D Voxel Interior Furniture Pack - Obj File_2/3D Voxel Interior Furniture Pack/Beds/Interior_Furniture_Bed_Double_01.obj"
+dest_files=["res://.godot/imported/Interior_Furniture_Bed_Double_01.obj-e8fc4ce4f552faccf987f217dba9d827.mesh", "res://.godot/imported/Interior_Furniture_Bed_Double_01.obj-e8fc4ce4f552faccf987f217dba9d827.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

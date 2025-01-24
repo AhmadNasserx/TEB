@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ch8rif5qmf2y3"
+path="res://.godot/imported/Park_Fence_End.obj-546715a15f2e8290ea2560e956a10cc2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Park_Fence_End.obj-546715a15f2e8290ea2560e956a10cc2.mesh"]
+
+source_file="res://Assetes/3D/3D Voxel Park Pack - Obj File_2/3D Voxel Park Pack/Park Furnishings/Park_Fence_End.obj"
+dest_files=["res://.godot/imported/Park_Fence_End.obj-546715a15f2e8290ea2560e956a10cc2.mesh", "res://.godot/imported/Park_Fence_End.obj-546715a15f2e8290ea2560e956a10cc2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

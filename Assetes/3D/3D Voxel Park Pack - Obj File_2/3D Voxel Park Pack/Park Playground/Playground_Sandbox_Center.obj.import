@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c8vit4800oxxv"
+path="res://.godot/imported/Playground_Sandbox_Center.obj-f51cf973c543adca6876fa5d55e03761.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Playground_Sandbox_Center.obj-f51cf973c543adca6876fa5d55e03761.mesh"]
+
+source_file="res://Assetes/3D/3D Voxel Park Pack - Obj File_2/3D Voxel Park Pack/Park Playground/Playground_Sandbox_Center.obj"
+dest_files=["res://.godot/imported/Playground_Sandbox_Center.obj-f51cf973c543adca6876fa5d55e03761.mesh", "res://.godot/imported/Playground_Sandbox_Center.obj-f51cf973c543adca6876fa5d55e03761.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

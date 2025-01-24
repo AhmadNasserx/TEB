@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://0c5ag81djhcd"
+path="res://.godot/imported/Office_Cubicle_Piece_Regular_Corner_03.obj-c30880181528e2d7496a0a85c054383b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Cubicle_Piece_Regular_Corner_03.obj-c30880181528e2d7496a0a85c054383b.mesh"]
+
+source_file="res://Assetes/3D/3D Voxel Office Pack - Obj File_2/Cubicles/Fragments/Office_Cubicle_Piece_Regular_Corner_03.obj"
+dest_files=["res://.godot/imported/Office_Cubicle_Piece_Regular_Corner_03.obj-c30880181528e2d7496a0a85c054383b.mesh", "res://.godot/imported/Office_Cubicle_Piece_Regular_Corner_03.obj-c30880181528e2d7496a0a85c054383b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

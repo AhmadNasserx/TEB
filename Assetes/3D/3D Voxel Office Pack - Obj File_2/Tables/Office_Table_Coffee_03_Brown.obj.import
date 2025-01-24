@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b4bbrrq8hy1la"
+path="res://.godot/imported/Office_Table_Coffee_03_Brown.obj-60f0a5f61f32e373f72c2d3a8a43cebd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Office_Table_Coffee_03_Brown.obj-60f0a5f61f32e373f72c2d3a8a43cebd.mesh"]
+
+source_file="res://Assetes/3D/3D Voxel Office Pack - Obj File_2/Tables/Office_Table_Coffee_03_Brown.obj"
+dest_files=["res://.godot/imported/Office_Table_Coffee_03_Brown.obj-60f0a5f61f32e373f72c2d3a8a43cebd.mesh", "res://.godot/imported/Office_Table_Coffee_03_Brown.obj-60f0a5f61f32e373f72c2d3a8a43cebd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

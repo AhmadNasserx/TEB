@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dj6ctc7c70dgh"
+path="res://.godot/imported/Picnic_Drink.obj-c29213b6a1e97bcb31459fe66f6cf470.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Picnic_Drink.obj-c29213b6a1e97bcb31459fe66f6cf470.mesh"]
+
+source_file="res://Assetes/3D/3D Voxel Park Pack - Obj File_2/3D Voxel Park Pack/Park Picnic/Picnic_Drink.obj"
+dest_files=["res://.godot/imported/Picnic_Drink.obj-c29213b6a1e97bcb31459fe66f6cf470.mesh", "res://.godot/imported/Picnic_Drink.obj-c29213b6a1e97bcb31459fe66f6cf470.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
