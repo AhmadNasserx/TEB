@@ -13,3 +13,13 @@ config_version=5
 config/name="TEB"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+AudioManager="*res://Singeltons/AudioManager.gd"
+FlagManager="*res://Singeltons/FlagManager.gd"
+GameManager="*res://Singeltons/GameManager.gd"
+PlayerManager="*res://Singeltons/PlayerManager.gd"
+SaveManager="*res://Singeltons/SaveManager.gd"
+SceneManager="*res://Singeltons/SceneManager.gd"
+UiManager="*res://Singeltons/UIManager.gd"
