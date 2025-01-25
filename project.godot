@@ -16,6 +16,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+SaveSystem="*res://addons/save_system/save_system.gd"
 AudioManager="*res://Singeltons/AudioManager.gd"
 FlagManager="*res://Singeltons/FlagManager.gd"
 GameManager="*res://Singeltons/GameManager.gd"
@@ -34,7 +35,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/scene_manager/plugin.cfg")
+enabled=PackedStringArray("res://addons/save_system/plugin.cfg", "res://addons/scene_manager/plugin.cfg")
 
 [input]
 

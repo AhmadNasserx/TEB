@@ -19,7 +19,8 @@ func _input(event: InputEvent) -> void:
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("shift"):
-		SceneManager.change_scene("res://Scenes/2D/home_2d.tscn")
+		SaveSystem.save("res://Scenes/3D/level.tscn")
+		SceneManager.change_scene(SaveSystem._load("res://Scenes/2D/home_2d.tscn"))
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
