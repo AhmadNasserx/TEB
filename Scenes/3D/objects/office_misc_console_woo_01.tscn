@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://cjvktmfss3cqa"]
+
+[ext_resource type="ArrayMesh" uid="uid://u1lpita2pdxa" path="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Misc/Electronics/Office_Misc_Console_Woo_01.obj" id="1_e2bjg"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_n0qan"]
+points = PackedVector3Array(-0.1, 0.796167, 0.292923, -0.3, 0.229611, -0.39041, -0.1, 0.234108, -0.384987, -0.3, 0.229611, 0.298347, -0.299766, 0.8, -0.38961, -0.299766, 0.8, 0.297546, -0.1, 0.234108, 0.292923, -0.1, 0.796167, -0.384987)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_if2db"]
+points = PackedVector3Array(-0.3, 0.214041, -0.392483, 0, 0.196062, 0.2917, -0.00579974, -1.38778e-17, 0.280342, -0.4, 0.196789, 0.294808, -0.392613, -1.38778e-17, -0.477167, -0.00579974, -1.38778e-17, -0.477167, -0.392613, -1.38778e-17, 0.280342, 0, 0.196062, -0.488525, -0.4, 0.196789, -0.491634, -0.1, 0.212235, 0.290145, -0.3, 0.214041, 0.296672, -0.1, 0.212235, -0.387625)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_wsymc"]
+points = PackedVector3Array(0.0976191, -0.00873016, -0.211905, 0.411905, 0.113492, 0.60873, 0.289648, 0.113492, 0.60873, 0.411905, -0.00873016, 0.60873, 0.411905, 0.113492, -0.106996, 0.0976191, 0.113492, 0.503902, 0.0976191, -0.00873016, 0.503902, 0.0976191, 0.113492, -0.211905, 0.411905, -0.00873016, -0.106996, 0.202401, 0.113492, -0.211905, 0.289648, -0.00873016, 0.60873, 0.202401, -0.00873016, -0.211905)
+
+[node name="OfficeMiscConsoleWoo01" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.67622, 0.730273, -5.46073)
+mesh = ExtResource("1_e2bjg")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_n0qan")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_if2db")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_wsymc")

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf0f7l0yb5jsl"]
+
+[ext_resource type="ArrayMesh" uid="uid://wnjgv1p586fg" path="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Misc/Electronics/Office_Misc_Fax.obj" id="1_2w71k"]
+
+[node name="OfficeMiscFax" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7432, 0.730273, -7.19619)
+mesh = ExtResource("1_2w71k")
+skeleton = NodePath("../..")

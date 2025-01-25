@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://botiqvy3fju61"]
+
+[ext_resource type="ArrayMesh" uid="uid://dbh56ts4g655e" path="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Misc/Electronics/Office_Misc_Console_Swotch_01.obj" id="1_ttm8q"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_e30m2"]
+points = PackedVector3Array(-0.390787, 0.00909089, -0.1, 0.407143, 0.707143, 0.107098, 0.290866, 0.499965, 0.2, -0.507065, 0.707143, 0.107098, -0.390787, 0.00909096, 0.2, 0.290866, 0.00909089, -0.1, -0.390787, 0.499965, -0.1, 0.290866, 0.00909096, 0.2, 0.407143, 0.707143, -0.00712886, -0.390787, 0.499965, 0.2, 0.290866, 0.499965, -0.1, 0.407143, 0.0929103, 0.107098, -0.507065, 0.707143, -0.00712886, -0.507065, 0.0929103, 0.107098, 0.407143, 0.0929103, -0.00712886, -0.507065, 0.0929103, -0.00712886)
+
+[node name="OfficeMiscConsoleSwotch01" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.48883, 0.709, 2.82758)
+mesh = ExtResource("1_ttm8q")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_e30m2")
