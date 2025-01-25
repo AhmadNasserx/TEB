@@ -2,7 +2,8 @@ extends CharacterBody2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var detection_area_2d: Area2D = $detectionArea2D
-
+@onready var bubble_animation_player: AnimationPlayer = $bubbleAnimationPlayer
+var in2Dscene: bool = true
 # Speed of the character
 @export var speed: float = 200.0
 
@@ -20,6 +21,15 @@ func _physics_process(delta: float) -> void:
 	# Update animation and detection area rotation
 	_update_animation(input_vector)
 	_update_detection_area(input_vector)
+	if Input.is_action_just_pressed("shift") and in2Dscene:
+		bubble_animation_player.play("bubble_transfer")
+		in2Dscene = false
+		SceneManager._change_scene()
+		
+	elif Input.is_action_just_pressed("shift") and !in2Dscene:
+		bubble_animation_player.play("bubble_return")
+		in2Dscene = true
+
 
 func _update_animation(input_vector: Vector2) -> void:
 	var current_animation: String = str(animated_sprite_2d.animation)
