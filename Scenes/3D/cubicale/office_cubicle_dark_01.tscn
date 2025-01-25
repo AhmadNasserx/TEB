@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjlgv1x1w05xr"]
+
+[ext_resource type="ArrayMesh" uid="uid://c3opr2uf6yrjh" path="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Cubicles/Office_Cubicle_Dark_01.obj" id="1_m7j6y"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4784h"]
+points = PackedVector3Array(-1.26984, 2.4127, 1.6254, -1.6254, -0.0253968, -1.21905, -1.26984, -0.0253968, -1.21905, -1.6254, -0.0253968, 1.6254, -1.6254, 2.4127, -1.21905, -1.26984, 2.4127, -1.21905, -1.26984, -0.0253968, 1.6254, -1.6254, 2.4127, 1.6254)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hqfl4"]
+points = PackedVector3Array(-1.59153, 0, -1.22328, 1.6254, 2.4127, -1.26984, 1.6254, 2.4127, -1.6254, 1.6254, -0.0253968, -1.26984, -1.6254, 2.4127, -1.6254, -1.6254, -0.0253968, -1.6254, -1.6, 2.39365, -1.22222, 1.6254, -0.0253968, -1.6254, -1.26964, -0.0253968, -1.21905, -1.26964, 2.4127, -1.21905)
+
+[node name="Office_Cubicle_Dark_01" type="StaticBody3D"]
+
+[node name="OfficeCubicleDark01" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.32513, 0, 1.33685)
+mesh = ExtResource("1_m7j6y")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.32513, 0, 1.33685)
+shape = SubResource("ConvexPolygonShape3D_4784h")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.32513, 0, 1.33685)
+shape = SubResource("ConvexPolygonShape3D_hqfl4")

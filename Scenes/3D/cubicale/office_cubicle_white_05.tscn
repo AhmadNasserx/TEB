@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://q3qwefhialmo"]
+
+[ext_resource type="ArrayMesh" uid="uid://be21yw7axnm1i" path="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Cubicles/Office_Cubicle_White_05.obj" id="1_26xy2"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hf6t3"]
+points = PackedVector3Array(0.507936, 2.4127, -1.26984, -1.6254, -0.0253968, -1.6254, -1.6, 0.00362812, -1.22389, 0.507936, -0.0253968, -1.26984, -1.6254, 2.4127, -1.6254, 0.507936, 2.4127, -1.6254, -1.6, 2.38367, -1.22389, 0.507936, -0.0253968, -1.6254, -1.26977, -0.0253968, -1.21905, -1.26977, 2.4127, -1.21905)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_58o0a"]
+points = PackedVector3Array(1.6, 2.35729, -1.22828, 0.507936, -0.0253968, -1.6254, 0.507936, -0.0253968, -1.26984, 0.507936, 2.4127, -1.6254, 1.6254, -0.0253968, -1.6254, 1.6254, 2.4127, -1.6254, 1.6, 0.0300144, -1.22828, 0.507936, 2.4127, -1.26984, 1.47292, -0.0253968, -1.21905, 1.47292, 2.4127, -1.21905)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_nnn7a"]
+points = PackedVector3Array(1.6254, 2.4127, 1.6254, 1.47302, -0.0253968, -1.21905, 1.6254, -0.0253968, -1.21905, 1.47302, -0.0253968, 1.6254, 1.47302, 2.4127, -1.21905, 1.6254, 2.4127, -1.21905, 1.6254, -0.0253968, 1.6254, 1.47302, 2.4127, 1.6254)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4xe3b"]
+points = PackedVector3Array(-1.22268, 2.39093, 1.6, -1.6254, -0.0253968, -1.21905, -1.6254, 2.4127, -1.21905, -1.6254, -0.0253968, 1.6254, -1.26984, -0.0253968, -1.21905, -1.6254, 2.4127, 1.6254, -1.22328, 0, 1.59577, -1.26984, 2.4127, -1.21905, -1.21905, -0.0253968, 1.47254, -1.21905, 2.4127, 1.47254)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qtql1"]
+points = PackedVector3Array(0.0507936, 2.4127, 1.6254, -1.21905, -0.0253968, 1.47302, -1.21905, -0.0253968, 1.6254, -1.21905, 2.4127, 1.47302, 0.0507936, -0.0253968, 1.47302, 0.0507936, -0.0253968, 1.6254, -1.21905, 2.4127, 1.6254, 0.0507936, 2.4127, 1.47302)
+
+[node name="OfficeCubicleWhite05" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6861, -0.388777, -2.88403)
+mesh = ExtResource("1_26xy2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_hf6t3")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_58o0a")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_nnn7a")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_4xe3b")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_qtql1")

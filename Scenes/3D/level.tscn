@@ -1,10 +1,12 @@
-[gd_scene load_steps=28 format=3 uid="uid://8qpiby04swu4"]
+[gd_scene load_steps=11 format=3 uid="uid://8qpiby04swu4"]
 
 [ext_resource type="PackedScene" uid="uid://bwuxxa4qu02xr" path="res://Scenes/3D/player_3d.tscn" id="1_afr3w"]
-[ext_resource type="ArrayMesh" uid="uid://deeo1fh1todgc" path="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Cubicles/Office_Cubicle_White_04.obj" id="2_0qk0x"]
-[ext_resource type="ArrayMesh" uid="uid://be21yw7axnm1i" path="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Cubicles/Office_Cubicle_White_05.obj" id="3_w2dhp"]
-[ext_resource type="ArrayMesh" uid="uid://crbr5r5ejwbya" path="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Cubicles/Fragments/Office_Cubicle_Piece_White_Edge_04.obj" id="4_t172y"]
-[ext_resource type="ArrayMesh" uid="uid://0fb3r6kqlsrt" path="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Cubicles/Fragments/Office_Cubicle_Piece_White_Edge_03.obj" id="5_yuw04"]
+[ext_resource type="PackedScene" uid="uid://q3qwefhialmo" path="res://Scenes/3D/cubicale/office_cubicle_white_05.tscn" id="2_agnrc"]
+[ext_resource type="PackedScene" uid="uid://bgwshlvax2k76" path="res://Scenes/3D/cubicale/office_cubicle_white_04.tscn" id="3_uuk2p"]
+[ext_resource type="PackedScene" uid="uid://cwl022naufe6m" path="res://Scenes/3D/cubicale/office_cubicle_white_01.tscn" id="4_g1gpj"]
+[ext_resource type="PackedScene" uid="uid://bbbvrwvasgttg" path="res://Scenes/3D/cubicale/office_cubicle_piece_white_edge_04.tscn" id="5_xlhl2"]
+[ext_resource type="PackedScene" uid="uid://cdlr6ecgelm7g" path="res://Scenes/3D/cubicale/office_cubicle_piece_white_edge_03.tscn" id="6_x2ucu"]
+[ext_resource type="PackedScene" uid="uid://che6isamd7ttj" path="res://Scenes/3D/cubicale/office_cubicle_piece_white_edge_01.tscn" id="7_hrv1b"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w4cfu"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -18,63 +20,6 @@ background_mode = 2
 sky = SubResource("Sky_hqe70")
 tonemap_mode = 2
 glow_enabled = true
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_d72v6"]
-points = PackedVector3Array(-1.6, 0, -1.6, -1.6, 0, 1.6, -1.6, 2.4, -1.6, 1.6, 0, -1.6, -1.6, 2.4, 1.6, 1.6, 0, 1.6, 1.6, 2.4, -1.6, 1.6, 2.4, 1.6)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3udtn"]
-points = PackedVector3Array(-1.6, 0, -1.6, -1.6, 0, 1.6, -1.6, 2.4, -1.6, 1.6, 0, -1.6, -1.6, 2.4, 1.6, 1.6, 0, 1.6, 1.6, 2.4, -1.6, 1.6, 2.4, 1.6)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_spttb"]
-points = PackedVector3Array(-1.6, 0, -1.6, -1.6, 0, 1.6, -1.6, 2.4, -1.6, 1.6, 0, -1.6, -1.6, 2.4, 1.6, 1.6, 0, 1.6, 1.6, 2.4, -1.6, 1.6, 2.4, 1.6)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1kc6r"]
-points = PackedVector3Array(-1.6, 0, -1.6, -1.6, 0, 1.6, -1.6, 2.4, -1.6, 1.6, 0, -1.6, -1.6, 2.4, 1.6, 1.6, 0, 1.6, 1.6, 2.4, -1.6, 1.6, 2.4, 1.6)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_nrmli"]
-points = PackedVector3Array(-0.8, 0, -0.8, 0.8, 0, -0.8, -0.8, 0, -0.5, -0.8, 2.4, -0.8, 0.8, 0, -0.5, 0.8, 2.4, -0.8, -0.8, 2.4, -0.5, 0.8, 2.4, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_daabd"]
-points = PackedVector3Array(-0.8, 0, -0.8, 0.8, 0, -0.8, -0.8, 0, -0.5, -0.8, 2.4, -0.8, 0.8, 0, -0.5, 0.8, 2.4, -0.8, -0.8, 2.4, -0.5, 0.8, 2.4, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_q1t8n"]
-points = PackedVector3Array(-0.8, 0, -0.8, 0.8, 0, -0.8, -0.8, 0, -0.5, -0.8, 2.4, -0.8, 0.8, 0, -0.5, 0.8, 2.4, -0.8, -0.8, 2.4, -0.5, 0.8, 2.4, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dwejg"]
-points = PackedVector3Array(-0.8, 0, -0.8, 0.8, 0, -0.8, -0.8, 0, -0.5, -0.8, 2.4, -0.8, 0.8, 0, -0.5, 0.8, 2.4, -0.8, -0.8, 2.4, -0.5, 0.8, 2.4, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_k0hup"]
-points = PackedVector3Array(-0.8, 0, -0.8, 0.8, 0, -0.8, -0.8, 0, -0.5, -0.8, 2.4, -0.8, 0.8, 0, -0.5, 0.8, 2.4, -0.8, -0.8, 2.4, -0.5, 0.8, 2.4, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_76eq1"]
-points = PackedVector3Array(-0.8, 0, -0.8, 0.8, 0, -0.8, -0.8, 0, -0.5, -0.8, 2.4, -0.8, 0.8, 0, -0.5, 0.8, 2.4, -0.8, -0.8, 2.4, -0.5, 0.8, 2.4, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_sl3i6"]
-points = PackedVector3Array(-0.8, 0, -0.8, 0.8, 0, -0.8, -0.8, 0, -0.5, -0.8, 2.4, -0.8, 0.8, 0, -0.5, 0.8, 2.4, -0.8, -0.8, 2.4, -0.5, 0.8, 2.4, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o2sv1"]
-points = PackedVector3Array(-0.8, 0, -0.8, 0.8, 0, -0.8, -0.8, 0, -0.5, -0.8, 2.4, -0.8, 0.8, 0, -0.5, 0.8, 2.4, -0.8, -0.8, 2.4, -0.5, 0.8, 2.4, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ipsdp"]
-points = PackedVector3Array(-0.8, 0, -0.8, 0.8, 0, -0.8, -0.8, 0, -0.5, -0.8, 2.4, -0.8, 0.8, 0, -0.5, 0.8, 2.4, -0.8, -0.8, 2.4, -0.5, 0.8, 2.4, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_48mmn"]
-points = PackedVector3Array(-0.8, 0, -0.8, 0.8, 0, -0.8, -0.8, 0, -0.5, -0.8, 2.4, -0.8, 0.8, 0, -0.5, 0.8, 2.4, -0.8, -0.8, 2.4, -0.5, 0.8, 2.4, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_iowpr"]
-points = PackedVector3Array(-0.8, 0, -0.8, 0.8, 0, -0.8, -0.8, 0, -0.5, -0.8, 2.4, -0.8, 0.8, 0, -0.5, 0.8, 2.4, -0.8, -0.8, 2.4, -0.5, 0.8, 2.4, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_up2ct"]
-points = PackedVector3Array(-0.8, 0, -0.8, 0.8, 0, -0.8, -0.8, 0, -0.5, -0.8, 2.4, -0.8, 0.8, 0, -0.5, 0.8, 2.4, -0.8, -0.8, 2.4, -0.5, 0.8, 2.4, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_mu6tl"]
-points = PackedVector3Array(-0.8, 0, -0.8, 0.8, 0, -0.8, -0.8, 0, -0.5, -0.8, 2.4, -0.8, 0.8, 0, -0.5, 0.8, 2.4, -0.8, -0.8, 2.4, -0.5, 0.8, 2.4, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6oehw"]
-points = PackedVector3Array(-0.8, 0, -0.8, 0.8, 0, -0.8, -0.8, 0, -0.5, -0.8, 2.4, -0.8, 0.8, 0, -0.5, 0.8, 2.4, -0.8, -0.8, 2.4, -0.5, 0.8, 2.4, -0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xufab"]
-points = PackedVector3Array(-0.8, 0, -0.8, 0.8, 0, -0.8, -0.8, 0, -0.5, -0.8, 2.4, -0.8, 0.8, 0, -0.5, 0.8, 2.4, -0.8, -0.8, 2.4, -0.5, 0.8, 2.4, -0.5)
 
 [node name="Level" type="Node3D"]
 
@@ -94,195 +39,100 @@ use_collision = true
 collision_mask = 6
 size = Vector3(1000, 1, 1000)
 
-[node name="Node" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.9875, 0, 0)
+[node name="Structure" type="Node3D" parent="."]
 
-[node name="OfficeCubicleWhite04" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.2536, -0.388777, -7.88304)
-mesh = ExtResource("2_0qk0x")
-skeleton = NodePath("../..")
+[node name="OfficeCubicleWhite05" parent="." instance=ExtResource("2_agnrc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.13219, -0.394018, -6.53543)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubicleWhite04"]
+[node name="OfficeCubicleWhite04" parent="." instance=ExtResource("3_uuk2p")]
+transform = Transform3D(0.0486754, 0, -0.998815, 0, 1, 0, 0.998815, 0, 0.0486754, 6.68864, -0.363196, -6.52276)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubicleWhite04/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_d72v6")
+[node name="OfficeCubicleWhite01" parent="." instance=ExtResource("4_g1gpj")]
+transform = Transform3D(0.00731281, 0, 0.999973, 0, 1, 0, -0.999973, 0, 0.00731281, -6.6549, -0.368301, 2.5476)
 
-[node name="OfficeCubicleWhite05" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(-0.0152013, 0, 0.999884, 0, 1, 0, -0.999884, 0, -0.0152013, -28.623, -0.388777, -2.09909)
-mesh = ExtResource("3_w2dhp")
-skeleton = NodePath("../..")
+[node name="OfficeCubiclePieceWhiteEdge04" parent="." instance=ExtResource("5_xlhl2")]
+transform = Transform3D(0.0099162, 8.00102e-05, 0.999951, -0.00146652, 0.999999, -6.54741e-05, -0.99995, -0.0014658, 0.00991631, -7.46011, -0.425623, 0.128779)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubicleWhite05"]
+[node name="OfficeCubiclePieceWhiteEdge08" parent="." instance=ExtResource("5_xlhl2")]
+transform = Transform3D(-0.998348, -0.00146786, -0.0574391, -0.00146652, 0.999999, -6.54741e-05, 0.0574391, 1.88726e-05, -0.998349, -4.37178, -0.342887, 3.30956)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubicleWhite05/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_3udtn")
+[node name="OfficeCubiclePieceWhiteEdge09" parent="." instance=ExtResource("5_xlhl2")]
+transform = Transform3D(-0.998348, -0.00146786, -0.0574391, -0.00146652, 0.999999, -6.54741e-05, 0.0574391, 1.88726e-05, -0.998349, -2.76516, -0.342887, 3.30956)
 
-[node name="OfficeCubicleWhite06" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(-0.999765, 0, -0.0216926, 0, 1, 0, 0.0216926, 0, -0.999765, -21.4769, -0.388777, -0.638365)
-mesh = ExtResource("2_0qk0x")
-skeleton = NodePath("../..")
+[node name="OfficeCubiclePieceWhiteEdge10" parent="." instance=ExtResource("5_xlhl2")]
+transform = Transform3D(-0.998348, -0.00146786, -0.0574391, -0.00146652, 0.999999, -6.54741e-05, 0.0574391, 1.88726e-05, -0.998349, -1.43887, -0.342887, 3.30956)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubicleWhite06"]
+[node name="OfficeCubiclePieceWhiteEdge11" parent="." instance=ExtResource("5_xlhl2")]
+transform = Transform3D(-0.998348, -0.00146786, -0.0574391, -0.00146652, 0.999999, -6.54741e-05, 0.0574391, 1.88726e-05, -0.998349, -0.192695, -0.342887, 3.30956)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubicleWhite06/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_spttb")
+[node name="OfficeCubiclePieceWhiteEdge12" parent="." instance=ExtResource("5_xlhl2")]
+transform = Transform3D(-0.998348, -0.00146786, -0.0574391, -0.00146652, 0.999999, -6.54741e-05, 0.0574391, 1.88726e-05, -0.998349, 0.907548, -0.342887, 3.30956)
 
-[node name="OfficeCubicleWhite07" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(-0.0167719, 0, -0.999859, 0, 1, 0, 0.999859, 0, -0.0167719, -14.4749, -0.388777, -4.91281)
-mesh = ExtResource("2_0qk0x")
-skeleton = NodePath("../..")
+[node name="OfficeCubiclePieceWhiteEdge13" parent="." instance=ExtResource("5_xlhl2")]
+transform = Transform3D(-0.998348, -0.00146786, -0.0574391, -0.00146652, 0.999999, -6.54741e-05, 0.0574391, 1.88726e-05, -0.998349, 2.40377, -0.342887, 3.30956)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubicleWhite07"]
+[node name="OfficeCubiclePieceWhiteEdge14" parent="." instance=ExtResource("5_xlhl2")]
+transform = Transform3D(-0.998348, -0.00146786, -0.0574391, -0.00146652, 0.999999, -6.54741e-05, 0.0574391, 1.88726e-05, -0.998349, 3.80533, -0.342887, 3.30956)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubicleWhite07/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_1kc6r")
+[node name="OfficeCubiclePieceWhiteEdge15" parent="." instance=ExtResource("5_xlhl2")]
+transform = Transform3D(-0.998348, -0.00146786, -0.0574391, -0.00146652, 0.999999, -6.54741e-05, 0.0574391, 1.88726e-05, -0.998349, 5.33498, -0.342887, 3.30956)
 
-[node name="OfficeCubiclePieceWhiteEdge04" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.3146, -0.373185, -5.75697)
-mesh = ExtResource("4_t172y")
-skeleton = NodePath("../..")
+[node name="OfficeCubiclePieceWhiteEdge05" parent="." instance=ExtResource("5_xlhl2")]
+transform = Transform3D(0.0099162, 8.00102e-05, 0.999951, -0.00146652, 0.999999, -6.54741e-05, -0.99995, -0.0014658, 0.00991631, -7.46011, -0.425623, -1.35399)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubiclePieceWhiteEdge04"]
+[node name="OfficeCubiclePieceWhiteEdge06" parent="." instance=ExtResource("5_xlhl2")]
+transform = Transform3D(0.0099162, 8.00102e-05, 0.999951, -0.00146652, 0.999999, -6.54741e-05, -0.99995, -0.0014658, 0.00991631, -7.46011, -0.425623, -2.85509)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubiclePieceWhiteEdge04/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_nrmli")
+[node name="OfficeCubiclePieceWhiteEdge07" parent="." instance=ExtResource("5_xlhl2")]
+transform = Transform3D(0.0099162, 8.00102e-05, 0.999951, -0.00146652, 0.999999, -6.54741e-05, -0.99995, -0.0014658, 0.00991631, -7.46011, -0.425623, -4.44623)
 
-[node name="OfficeCubiclePieceWhiteEdge05" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.835, -0.373184, -5.7691)
-mesh = ExtResource("4_t172y")
-skeleton = NodePath("../..")
+[node name="OfficeCubiclePieceWhiteEdge03" parent="." instance=ExtResource("6_x2ucu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.17514, -0.4046, -7.35819)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubiclePieceWhiteEdge05"]
+[node name="OfficeCubiclePieceWhiteEdge16" parent="." instance=ExtResource("6_x2ucu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11423, -0.4046, -7.35819)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubiclePieceWhiteEdge05/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_daabd")
+[node name="OfficeCubiclePieceWhiteEdge17" parent="." instance=ExtResource("6_x2ucu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2742, -0.4046, -7.35819)
 
-[node name="OfficeCubiclePieceWhiteEdge06" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.835, -0.373184, -2.814)
-mesh = ExtResource("4_t172y")
-skeleton = NodePath("../..")
+[node name="OfficeCubiclePieceWhiteEdge18" parent="." instance=ExtResource("6_x2ucu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.32915, -0.4046, -7.35819)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubiclePieceWhiteEdge06"]
+[node name="OfficeCubiclePieceWhiteEdge19" parent="." instance=ExtResource("6_x2ucu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.254463, -0.4046, -7.35819)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubiclePieceWhiteEdge06/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_q1t8n")
+[node name="OfficeCubiclePieceWhiteEdge20" parent="." instance=ExtResource("6_x2ucu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.800557, -0.4046, -7.35819)
 
-[node name="OfficeCubiclePieceWhiteEdge07" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.382, -0.373184, -2.814)
-mesh = ExtResource("4_t172y")
-skeleton = NodePath("../..")
+[node name="OfficeCubiclePieceWhiteEdge21" parent="." instance=ExtResource("6_x2ucu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.85134, -0.4046, -7.35819)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubiclePieceWhiteEdge07"]
+[node name="OfficeCubiclePieceWhiteEdge22" parent="." instance=ExtResource("6_x2ucu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.31568, -0.4046, -7.35819)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubiclePieceWhiteEdge07/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_dwejg")
+[node name="OfficeCubiclePieceWhiteEdge23" parent="." instance=ExtResource("6_x2ucu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.51239, -0.4046, -7.35819)
 
-[node name="OfficeCubiclePieceWhiteEdge14" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(-0.998579, 0, 0.0532946, 0, 1, 0, -0.0532946, 0, -0.998579, -19.3361, -0.373184, -4.13703)
-mesh = ExtResource("4_t172y")
-skeleton = NodePath("../..")
+[node name="OfficeCubiclePieceWhiteEdge01" parent="." instance=ExtResource("7_hrv1b")]
+transform = Transform3D(0.107809, 0, -0.994172, 0, 1, 0, 0.994172, 0, 0.107809, 4.41381, -0.312432, -4.28688)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubiclePieceWhiteEdge14"]
+[node name="OfficeCubiclePieceWhiteEdge02" parent="." instance=ExtResource("7_hrv1b")]
+transform = Transform3D(0.107809, 0, -0.994172, 0, 1, 0, 0.994172, 0, 0.107809, 4.56281, -0.312432, -2.94296)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubiclePieceWhiteEdge14/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_k0hup")
+[node name="OfficeCubiclePieceWhiteEdge24" parent="." instance=ExtResource("7_hrv1b")]
+transform = Transform3D(0.107809, 0, -0.994172, 0, 1, 0, 0.994172, 0, 0.107809, 4.56281, -0.312432, -1.67887)
 
-[node name="OfficeCubiclePieceWhiteEdge13" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(0.0680502, 0, 0.997682, 0, 1, 0, -0.997682, 0, 0.0680502, -19.4373, -0.373184, -2.85525)
-mesh = ExtResource("4_t172y")
-skeleton = NodePath("../..")
+[node name="OfficeCubiclePieceWhiteEdge25" parent="." instance=ExtResource("7_hrv1b")]
+transform = Transform3D(0.107809, 0, -0.994172, 0, 1, 0, 0.994172, 0, 0.107809, 4.56281, -0.312432, -0.513571)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubiclePieceWhiteEdge13"]
+[node name="OfficeCubiclePieceWhiteEdge26" parent="." instance=ExtResource("7_hrv1b")]
+transform = Transform3D(0.107809, 0, -0.994172, 0, 1, 0, 0.994172, 0, 0.107809, 4.56281, -0.312432, 0.634464)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubiclePieceWhiteEdge13/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_76eq1")
+[node name="OfficeCubiclePieceWhiteEdge27" parent="." instance=ExtResource("7_hrv1b")]
+transform = Transform3D(0.107809, 0, -0.994172, 0, 1, 0, 0.994172, 0, 0.107809, 4.56281, -0.312432, 1.46642)
 
-[node name="OfficeCubiclePieceWhiteEdge08" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.4244, -0.373184, -3.07725)
-mesh = ExtResource("4_t172y")
-skeleton = NodePath("../..")
+[node name="OfficeCubiclePieceWhiteEdge28" parent="." instance=ExtResource("7_hrv1b")]
+transform = Transform3D(0.107809, 0, -0.994172, 0, 1, 0, 0.994172, 0, 0.107809, 4.56281, -0.312432, 2.24338)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubiclePieceWhiteEdge08"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubiclePieceWhiteEdge08/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_sl3i6")
-
-[node name="OfficeCubiclePieceWhiteEdge17" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.0584, -0.373184, -3.07725)
-mesh = ExtResource("4_t172y")
-skeleton = NodePath("../..")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubiclePieceWhiteEdge17"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubiclePieceWhiteEdge17/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_o2sv1")
-
-[node name="OfficeCubiclePieceWhiteEdge15" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.2604, -0.373184, -3.07725)
-mesh = ExtResource("4_t172y")
-skeleton = NodePath("../..")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubiclePieceWhiteEdge15"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubiclePieceWhiteEdge15/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_ipsdp")
-
-[node name="OfficeCubiclePieceWhiteEdge16" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(-0.0529808, 0, 0.998596, 0, 1, 0, -0.998596, 0, -0.0529808, -22.9772, -0.373184, -5.55239)
-mesh = ExtResource("4_t172y")
-skeleton = NodePath("../..")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubiclePieceWhiteEdge16"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubiclePieceWhiteEdge16/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_48mmn")
-
-[node name="OfficeCubiclePieceWhiteEdge09" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.3259, -0.373184, -1.46506)
-mesh = ExtResource("4_t172y")
-skeleton = NodePath("../..")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubiclePieceWhiteEdge09"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubiclePieceWhiteEdge09/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_iowpr")
-
-[node name="OfficeCubiclePieceWhiteEdge10" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.7996, -0.373184, -1.47786)
-mesh = ExtResource("4_t172y")
-skeleton = NodePath("../..")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubiclePieceWhiteEdge10"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubiclePieceWhiteEdge10/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_up2ct")
-
-[node name="OfficeCubiclePieceWhiteEdge11" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.6099, -0.373184, -1.41195)
-mesh = ExtResource("4_t172y")
-skeleton = NodePath("../..")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubiclePieceWhiteEdge11"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubiclePieceWhiteEdge11/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_mu6tl")
-
-[node name="OfficeCubiclePieceWhiteEdge12" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(0.0217102, 0, 0.999764, 0, 1, 0, -0.999764, 0, 0.0217102, -22.3222, -0.373184, -0.898179)
-mesh = ExtResource("4_t172y")
-skeleton = NodePath("../..")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubiclePieceWhiteEdge12"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubiclePieceWhiteEdge12/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_6oehw")
-
-[node name="OfficeCubiclePieceWhiteEdge03" type="MeshInstance3D" parent="Node"]
-transform = Transform3D(0.994836, 0, 0, 0, 0.994836, 0, 0, 0, 0.994836, -19.8794, -0.388778, -5.78178)
-mesh = ExtResource("5_yuw04")
-skeleton = NodePath("../..")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Node/OfficeCubiclePieceWhiteEdge03"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/OfficeCubiclePieceWhiteEdge03/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_xufab")
+[node name="OfficeCubiclePieceWhiteEdge29" parent="." instance=ExtResource("7_hrv1b")]
+transform = Transform3D(0.107809, 0, -0.994172, 0, 1, 0, 0.994172, 0, 0.107809, 4.56281, -0.312432, 3.21872)

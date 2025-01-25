@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbbvrwvasgttg"]
+
+[ext_resource type="ArrayMesh" uid="uid://crbr5r5ejwbya" path="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Cubicles/Fragments/Office_Cubicle_Piece_White_Edge_04.obj" id="1_8km5y"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vf6sw"]
+points = PackedVector3Array(0.819048, 2.41905, -0.47619, -0.819048, -0.0190477, -0.819048, -0.819048, -0.0190477, -0.47619, -0.819048, 2.41905, -0.819048, 0.819048, -0.0190477, -0.819048, 0.819048, -0.0190477, -0.47619, -0.819048, 2.41905, -0.47619, 0.819048, 2.41905, -0.819048)
+
+[node name="OfficeCubiclePieceWhiteEdge04" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.83687, -0.388776, 6.9544)
+mesh = ExtResource("1_8km5y")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_vf6sw")

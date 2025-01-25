@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxas1rj3bmybj"]
+
+[ext_resource type="ArrayMesh" uid="uid://hqgaixxsuvvl" path="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Cubicles/Fragments/Office_Cubicle_Piece_White_Corner_01.obj" id="1_g254h"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pt52i"]
+points = PackedVector3Array(-0.442561, 0.00930221, -0.8, -0.476235, 2.41905, 0.819048, -0.8, 2.29758, 0.737439, -0.476235, -0.0190477, 0.819048, -0.8, 2.29758, -0.737439, -0.8, 0.102415, -0.737439, -0.442561, 2.3907, -0.8, -0.8, 0.102415, 0.737439, -0.438133, -0.0190477, -0.476067, -0.438133, 2.41905, -0.476067)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gh0gi"]
+points = PackedVector3Array(0.819048, 2.41905, -0.47619, -0.438095, -0.0190477, -0.819048, -0.438095, -0.0190477, -0.47619, -0.438095, 2.41905, -0.819048, 0.819048, -0.0190477, -0.819048, 0.819048, -0.0190477, -0.47619, -0.438095, 2.41905, -0.47619, 0.819048, 2.41905, -0.819048)
+
+[node name="OfficeCubiclePieceWhiteCorner01" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.9565, -0.388777, 0.328657)
+mesh = ExtResource("1_g254h")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_pt52i")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_gh0gi")
