@@ -24,7 +24,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("shift") and in2Dscene:
 		bubble_animation_player.play("bubble_transfer")
 		in2Dscene = false
-		SceneManager._change_scene()
+		SceneManager.change_scene("res://Scenes/3D/level.tscn")
 		
 	elif Input.is_action_just_pressed("shift") and !in2Dscene:
 		bubble_animation_player.play("bubble_return")

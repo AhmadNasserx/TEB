@@ -21,7 +21,7 @@ FlagManager="*res://Singeltons/FlagManager.gd"
 GameManager="*res://Singeltons/GameManager.gd"
 PlayerManager="*res://Singeltons/PlayerManager.gd"
 SaveManager="*res://Singeltons/SaveManager.gd"
-SceneManager="*res://Singeltons/SceneManager.gd"
+SceneManager="*res://addons/scene_manager/SceneManager.tscn"
 UiManager="*res://Singeltons/UIManager.gd"
 
 [display]
@@ -31,6 +31,10 @@ window/size/viewport_height=216
 window/size/mode=4
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/scene_manager/plugin.cfg")
 
 [input]
 
