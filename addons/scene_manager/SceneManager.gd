@@ -122,17 +122,29 @@ func _reload_scene() -> void:
 func fade_in_place(setted_options: Dictionary = {}) -> void:
 	setted_options["skip_scene_change"] = true
 	await change_scene(null, setted_options)
+func _replace_scene(scene_name: String, options: Dictionary = {}) -> void:
+	# Hide the current scene if it exists
+	if _current_scene:
+		_current_scene.visible = false
+		scene_unloaded.emit()
 
-func _replace_scene(path: Variant, options: Dictionary) -> void:
-	_current_scene.queue_free()
-	scene_unloaded.emit()
-	var following_scene: PackedScene = _load_scene_resource(path)
-	_current_scene = following_scene.instantiate()
-	_current_scene.tree_entered.connect(options["on_tree_enter"].bind(_current_scene))
-	_current_scene.ready.connect(options["on_ready"].bind(_current_scene))
-	await _tree.create_timer(0.0).timeout
-	_root.add_child(_current_scene)
-	_tree.set_current_scene(_current_scene)
+	# Fetch the autoloaded scene by its name
+	var new_scene: Node = get_tree().root.get_node_or_null(scene_name)
+	if new_scene:
+		_current_scene = new_scene
+		_current_scene.visible = true
+
+		# Connect additional logic if specified in options
+		if options.has("on_tree_enter") and typeof(options["on_tree_enter"]) == TYPE_CALLABLE:
+			_current_scene.tree_entered.connect(options["on_tree_enter"].bind(_current_scene))
+		if options.has("on_ready") and typeof(options["on_ready"]) == TYPE_CALLABLE:
+			_current_scene.ready.connect(options["on_ready"].bind(_current_scene))
+		
+		# Wait one frame for setup
+		await get_tree().create_timer(0.0).timeout
+		_tree.set_current_scene(_current_scene)
+	else:
+		push_error("Scene '%s' not found or is not autoloaded!" % scene_name)
 
 func _load_scene_resource(path: Variant) -> Resource:
 	if path is PackedScene:

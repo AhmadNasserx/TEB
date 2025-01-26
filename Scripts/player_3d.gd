@@ -27,7 +27,9 @@ func _input(event: InputEvent) -> void:
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("shift"):
-		SceneManager.change_scene("res://Scenes/2D/home_2d.tscn")
+		await SceneManager.change_scene(str(Home2d.get_path()))
+		Level.hide()
+		Home2d.show()
 
 	# Add the gravity
 	if not is_on_floor():

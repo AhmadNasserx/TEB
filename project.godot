@@ -24,6 +24,8 @@ SaveManager="*res://Singeltons/SaveManager.gd"
 SceneManager="*res://addons/scene_manager/SceneManager.tscn"
 UiManager="*res://Singeltons/UIManager.gd"
 AudioManager="*res://Scenes/audio_manager.tscn"
+Level="*res://Scenes/3D/level.tscn"
+Home2d="*res://Scenes/2D/home_2d.tscn"
 
 [display]
 
