@@ -16,7 +16,6 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-SaveSystem="*res://addons/save_system/save_system.gd"
 AudioManager="*res://Singeltons/AudioManager.gd"
 FlagManager="*res://Singeltons/FlagManager.gd"
 GameManager="*res://Singeltons/GameManager.gd"
