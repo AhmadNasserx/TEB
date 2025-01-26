@@ -16,7 +16,8 @@ func _physics_process(delta: float) -> void:
 
 	# Move the character
 	velocity = input_vector * speed
-	move_and_slide()
+	if Home2d.is_visible_in_tree():
+		move_and_slide()
 
 	# Update animation and detection area rotation
 	_update_animation(input_vector)

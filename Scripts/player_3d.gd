@@ -51,8 +51,8 @@ func _physics_process(delta: float) -> void:
 
 	# Apply joystick rotation smoothly
 	control_head(yaw_delta, pitch_delta)
-
-	move_and_slide()
+	if Level.is_visible_in_tree():
+		move_and_slide()
 
 func control_head(delta_x: float, delta_y: float) -> void:
 	# Rotate the CharacterBody3D (yaw) using the horizontal movement
