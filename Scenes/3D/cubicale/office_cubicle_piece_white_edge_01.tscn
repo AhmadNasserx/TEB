@@ -6,7 +6,6 @@
 points = PackedVector3Array(0.819048, 2.41905, -0.666667, -0.819048, -0.0190477, -0.819048, -0.819048, -0.0190477, -0.666667, -0.819048, 2.41905, -0.819048, 0.819048, -0.0190477, -0.819048, 0.819048, -0.0190477, -0.666667, -0.819048, 2.41905, -0.666667, 0.819048, 2.41905, -0.819048)
 
 [node name="OfficeCubiclePieceWhiteEdge01" type="MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.13826, -0.388778, 7.19604)
 mesh = ExtResource("1_jtbjy")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]

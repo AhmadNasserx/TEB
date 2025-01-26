@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bp2ygqsmqe6lw"]
+[gd_scene load_steps=7 format=3 uid="uid://bp2ygqsmqe6lw"]
 
 [ext_resource type="PackedScene" uid="uid://bwuxxa4qu02xr" path="res://Scenes/3D/player_3d.tscn" id="1_jfma4"]
+[ext_resource type="PackedScene" uid="uid://bqyxvhtvgx8cg" path="res://Scenes/3D/cubicale/office_cubicle_piece_white_corner_03.tscn" id="2_rwqhv"]
+[ext_resource type="PackedScene" uid="uid://che6isamd7ttj" path="res://Scenes/3D/cubicale/office_cubicle_piece_white_edge_01.tscn" id="3_qswwr"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7stvf"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -30,3 +32,1154 @@ size = Vector3(100, 1, 100)
 
 [node name="player3D" parent="." instance=ExtResource("1_jfma4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.965545, 0)
+
+[node name="building" type="Node3D" parent="."]
+
+[node name="corners" type="Node3D" parent="building"]
+
+[node name="corner1" parent="building/corners" instance=ExtResource("2_rwqhv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.1729, 0.5, -49.2014)
+skeleton = NodePath("../../..")
+
+[node name="corner2" parent="building/corners" instance=ExtResource("2_rwqhv")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -49.2014, 0.5, -49.2014)
+skeleton = NodePath("../../..")
+
+[node name="corner3" parent="building/corners" instance=ExtResource("2_rwqhv")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -49.2014, 0.5, 49.1806)
+skeleton = NodePath("../../..")
+
+[node name="corner4" parent="building/corners" instance=ExtResource("2_rwqhv")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 49.1757, 0.5, 49.1806)
+skeleton = NodePath("../../..")
+
+[node name="Walls1" type="Node3D" parent="building"]
+
+[node name="wall1" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 47.5783)
+skeleton = NodePath("../../..")
+
+[node name="wall2" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 46.0696)
+skeleton = NodePath("../../..")
+
+[node name="wall3" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 44.5126)
+skeleton = NodePath("../../..")
+
+[node name="wall4" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 42.9633)
+skeleton = NodePath("../../..")
+
+[node name="wall5" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 41.5925)
+skeleton = NodePath("../../..")
+
+[node name="wall6" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 40.0838)
+skeleton = NodePath("../../..")
+
+[node name="wall7" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 38.5268)
+skeleton = NodePath("../../..")
+
+[node name="wall8" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 36.9775)
+skeleton = NodePath("../../..")
+
+[node name="wall9" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 37.3827)
+skeleton = NodePath("../../..")
+
+[node name="wall10" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 35.874)
+skeleton = NodePath("../../..")
+
+[node name="wall11" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 34.317)
+skeleton = NodePath("../../..")
+
+[node name="wall12" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 32.7677)
+skeleton = NodePath("../../..")
+
+[node name="wall13" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 31.3968)
+skeleton = NodePath("../../..")
+
+[node name="wall14" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 29.8882)
+skeleton = NodePath("../../..")
+
+[node name="wall15" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 28.3312)
+skeleton = NodePath("../../..")
+
+[node name="wall16" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 26.7819)
+skeleton = NodePath("../../..")
+
+[node name="wall17" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 25.5801)
+skeleton = NodePath("../../..")
+
+[node name="wall18" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 24.0714)
+skeleton = NodePath("../../..")
+
+[node name="wall19" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 22.5145)
+skeleton = NodePath("../../..")
+
+[node name="wall20" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 20.9651)
+skeleton = NodePath("../../..")
+
+[node name="wall21" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 19.5943)
+skeleton = NodePath("../../..")
+
+[node name="wall22" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 18.0856)
+skeleton = NodePath("../../..")
+
+[node name="wall23" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 16.5286)
+skeleton = NodePath("../../..")
+
+[node name="wall24" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 14.9793)
+skeleton = NodePath("../../..")
+
+[node name="wall25" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 15.3845)
+skeleton = NodePath("../../..")
+
+[node name="wall26" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 13.8758)
+skeleton = NodePath("../../..")
+
+[node name="wall27" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 12.3188)
+skeleton = NodePath("../../..")
+
+[node name="wall28" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 10.7695)
+skeleton = NodePath("../../..")
+
+[node name="wall29" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 9.39866)
+skeleton = NodePath("../../..")
+
+[node name="wall30" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 7.88998)
+skeleton = NodePath("../../..")
+
+[node name="wall31" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 6.33301)
+skeleton = NodePath("../../..")
+
+[node name="wall32" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 4.78368)
+skeleton = NodePath("../../..")
+
+[node name="wall33" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 3.29591)
+skeleton = NodePath("../../..")
+
+[node name="wall34" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 1.78723)
+skeleton = NodePath("../../..")
+
+[node name="wall35" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 0.230263)
+skeleton = NodePath("../../..")
+
+[node name="wall36" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -1.31907)
+skeleton = NodePath("../../..")
+
+[node name="wall37" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -2.68991)
+skeleton = NodePath("../../..")
+
+[node name="wall38" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -4.19859)
+skeleton = NodePath("../../..")
+
+[node name="wall39" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -5.75556)
+skeleton = NodePath("../../..")
+
+[node name="wall40" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -7.30489)
+skeleton = NodePath("../../..")
+
+[node name="wall41" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -6.8997)
+skeleton = NodePath("../../..")
+
+[node name="wall42" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -8.40839)
+skeleton = NodePath("../../..")
+
+[node name="wall43" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -9.96535)
+skeleton = NodePath("../../..")
+
+[node name="wall44" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -11.5147)
+skeleton = NodePath("../../..")
+
+[node name="wall45" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -12.8855)
+skeleton = NodePath("../../..")
+
+[node name="wall46" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -14.3942)
+skeleton = NodePath("../../..")
+
+[node name="wall47" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -15.9512)
+skeleton = NodePath("../../..")
+
+[node name="wall48" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -17.5005)
+skeleton = NodePath("../../..")
+
+[node name="wall49" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -18.7023)
+skeleton = NodePath("../../..")
+
+[node name="wall50" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -20.211)
+skeleton = NodePath("../../..")
+
+[node name="wall51" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -21.7679)
+skeleton = NodePath("../../..")
+
+[node name="wall52" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -23.3173)
+skeleton = NodePath("../../..")
+
+[node name="wall53" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -24.6881)
+skeleton = NodePath("../../..")
+
+[node name="wall54" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -26.1968)
+skeleton = NodePath("../../..")
+
+[node name="wall55" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -27.7537)
+skeleton = NodePath("../../..")
+
+[node name="wall56" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -29.3031)
+skeleton = NodePath("../../..")
+
+[node name="wall57" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -28.8979)
+skeleton = NodePath("../../..")
+
+[node name="wall58" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -30.4066)
+skeleton = NodePath("../../..")
+
+[node name="wall59" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -31.9635)
+skeleton = NodePath("../../..")
+
+[node name="wall60" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -33.5129)
+skeleton = NodePath("../../..")
+
+[node name="wall61" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -34.8837)
+skeleton = NodePath("../../..")
+
+[node name="wall62" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -36.3924)
+skeleton = NodePath("../../..")
+
+[node name="wall63" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -37.9494)
+skeleton = NodePath("../../..")
+
+[node name="wall64" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -39.4987)
+skeleton = NodePath("../../..")
+
+[node name="wall65" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -40.6154)
+skeleton = NodePath("../../..")
+
+[node name="wall66" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -42.1241)
+skeleton = NodePath("../../..")
+
+[node name="wall67" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -43.6811)
+skeleton = NodePath("../../..")
+
+[node name="wall68" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -45.2304)
+skeleton = NodePath("../../..")
+
+[node name="wall69" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -46.6044)
+skeleton = NodePath("../../..")
+
+[node name="wall70" parent="building/Walls1" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -48.0877)
+skeleton = NodePath("../../..")
+
+[node name="Walls2" type="Node3D" parent="building"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="wall1" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 47.5783)
+skeleton = NodePath("../../..")
+
+[node name="wall2" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 46.0696)
+skeleton = NodePath("../../..")
+
+[node name="wall3" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 44.5126)
+skeleton = NodePath("../../..")
+
+[node name="wall4" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 42.9633)
+skeleton = NodePath("../../..")
+
+[node name="wall5" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 41.5925)
+skeleton = NodePath("../../..")
+
+[node name="wall6" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 40.0838)
+skeleton = NodePath("../../..")
+
+[node name="wall7" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 38.5268)
+skeleton = NodePath("../../..")
+
+[node name="wall8" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 36.9775)
+skeleton = NodePath("../../..")
+
+[node name="wall9" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 37.3827)
+skeleton = NodePath("../../..")
+
+[node name="wall10" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 35.874)
+skeleton = NodePath("../../..")
+
+[node name="wall11" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 34.317)
+skeleton = NodePath("../../..")
+
+[node name="wall12" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 32.7677)
+skeleton = NodePath("../../..")
+
+[node name="wall13" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 31.3968)
+skeleton = NodePath("../../..")
+
+[node name="wall14" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 29.8882)
+skeleton = NodePath("../../..")
+
+[node name="wall15" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 28.3312)
+skeleton = NodePath("../../..")
+
+[node name="wall16" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 26.7819)
+skeleton = NodePath("../../..")
+
+[node name="wall17" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 25.5801)
+skeleton = NodePath("../../..")
+
+[node name="wall18" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 24.0714)
+skeleton = NodePath("../../..")
+
+[node name="wall19" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 22.5145)
+skeleton = NodePath("../../..")
+
+[node name="wall20" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 20.9651)
+skeleton = NodePath("../../..")
+
+[node name="wall21" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 19.5943)
+skeleton = NodePath("../../..")
+
+[node name="wall22" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 18.0856)
+skeleton = NodePath("../../..")
+
+[node name="wall23" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 16.5286)
+skeleton = NodePath("../../..")
+
+[node name="wall24" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 14.9793)
+skeleton = NodePath("../../..")
+
+[node name="wall25" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 15.3845)
+skeleton = NodePath("../../..")
+
+[node name="wall26" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 13.8758)
+skeleton = NodePath("../../..")
+
+[node name="wall27" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 12.3188)
+skeleton = NodePath("../../..")
+
+[node name="wall28" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 10.7695)
+skeleton = NodePath("../../..")
+
+[node name="wall29" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 9.39866)
+skeleton = NodePath("../../..")
+
+[node name="wall30" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 7.88998)
+skeleton = NodePath("../../..")
+
+[node name="wall31" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 6.33301)
+skeleton = NodePath("../../..")
+
+[node name="wall32" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 4.78368)
+skeleton = NodePath("../../..")
+
+[node name="wall33" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 3.29591)
+skeleton = NodePath("../../..")
+
+[node name="wall34" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 1.78723)
+skeleton = NodePath("../../..")
+
+[node name="wall35" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 0.230263)
+skeleton = NodePath("../../..")
+
+[node name="wall36" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -1.31907)
+skeleton = NodePath("../../..")
+
+[node name="wall37" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -2.68991)
+skeleton = NodePath("../../..")
+
+[node name="wall38" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -4.19859)
+skeleton = NodePath("../../..")
+
+[node name="wall39" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -5.75556)
+skeleton = NodePath("../../..")
+
+[node name="wall40" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -7.30489)
+skeleton = NodePath("../../..")
+
+[node name="wall41" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -6.8997)
+skeleton = NodePath("../../..")
+
+[node name="wall42" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -8.40839)
+skeleton = NodePath("../../..")
+
+[node name="wall43" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -9.96535)
+skeleton = NodePath("../../..")
+
+[node name="wall44" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -11.5147)
+skeleton = NodePath("../../..")
+
+[node name="wall45" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -12.8855)
+skeleton = NodePath("../../..")
+
+[node name="wall46" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -14.3942)
+skeleton = NodePath("../../..")
+
+[node name="wall47" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -15.9512)
+skeleton = NodePath("../../..")
+
+[node name="wall48" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -17.5005)
+skeleton = NodePath("../../..")
+
+[node name="wall49" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -18.7023)
+skeleton = NodePath("../../..")
+
+[node name="wall50" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -20.211)
+skeleton = NodePath("../../..")
+
+[node name="wall51" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -21.7679)
+skeleton = NodePath("../../..")
+
+[node name="wall52" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -23.3173)
+skeleton = NodePath("../../..")
+
+[node name="wall53" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -24.6881)
+skeleton = NodePath("../../..")
+
+[node name="wall54" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -26.1968)
+skeleton = NodePath("../../..")
+
+[node name="wall55" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -27.7537)
+skeleton = NodePath("../../..")
+
+[node name="wall56" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -29.3031)
+skeleton = NodePath("../../..")
+
+[node name="wall57" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -28.8979)
+skeleton = NodePath("../../..")
+
+[node name="wall58" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -30.4066)
+skeleton = NodePath("../../..")
+
+[node name="wall59" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -31.9635)
+skeleton = NodePath("../../..")
+
+[node name="wall60" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -33.5129)
+skeleton = NodePath("../../..")
+
+[node name="wall61" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -34.8837)
+skeleton = NodePath("../../..")
+
+[node name="wall62" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -36.3924)
+skeleton = NodePath("../../..")
+
+[node name="wall63" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -37.9494)
+skeleton = NodePath("../../..")
+
+[node name="wall64" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -39.4987)
+skeleton = NodePath("../../..")
+
+[node name="wall65" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -40.6154)
+skeleton = NodePath("../../..")
+
+[node name="wall66" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -42.1241)
+skeleton = NodePath("../../..")
+
+[node name="wall67" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -43.6811)
+skeleton = NodePath("../../..")
+
+[node name="wall68" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -45.2304)
+skeleton = NodePath("../../..")
+
+[node name="wall69" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -46.6044)
+skeleton = NodePath("../../..")
+
+[node name="wall70" parent="building/Walls2" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -48.0877)
+skeleton = NodePath("../../..")
+
+[node name="Walls3" type="Node3D" parent="building"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+
+[node name="wall1" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 47.5783)
+skeleton = NodePath("../../..")
+
+[node name="wall2" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 46.0696)
+skeleton = NodePath("../../..")
+
+[node name="wall3" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 44.5126)
+skeleton = NodePath("../../..")
+
+[node name="wall4" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 42.9633)
+skeleton = NodePath("../../..")
+
+[node name="wall5" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 41.5925)
+skeleton = NodePath("../../..")
+
+[node name="wall6" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 40.0838)
+skeleton = NodePath("../../..")
+
+[node name="wall7" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 38.5268)
+skeleton = NodePath("../../..")
+
+[node name="wall8" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 36.9775)
+skeleton = NodePath("../../..")
+
+[node name="wall9" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 37.3827)
+skeleton = NodePath("../../..")
+
+[node name="wall10" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 35.874)
+skeleton = NodePath("../../..")
+
+[node name="wall11" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 34.317)
+skeleton = NodePath("../../..")
+
+[node name="wall12" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 32.7677)
+skeleton = NodePath("../../..")
+
+[node name="wall13" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 31.3968)
+skeleton = NodePath("../../..")
+
+[node name="wall14" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 29.8882)
+skeleton = NodePath("../../..")
+
+[node name="wall15" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 28.3312)
+skeleton = NodePath("../../..")
+
+[node name="wall16" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 26.7819)
+skeleton = NodePath("../../..")
+
+[node name="wall17" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 25.5801)
+skeleton = NodePath("../../..")
+
+[node name="wall18" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 24.0714)
+skeleton = NodePath("../../..")
+
+[node name="wall19" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 22.5145)
+skeleton = NodePath("../../..")
+
+[node name="wall20" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 20.9651)
+skeleton = NodePath("../../..")
+
+[node name="wall21" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 19.5943)
+skeleton = NodePath("../../..")
+
+[node name="wall22" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 18.0856)
+skeleton = NodePath("../../..")
+
+[node name="wall23" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 16.5286)
+skeleton = NodePath("../../..")
+
+[node name="wall24" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 14.9793)
+skeleton = NodePath("../../..")
+
+[node name="wall25" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 15.3845)
+skeleton = NodePath("../../..")
+
+[node name="wall26" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 13.8758)
+skeleton = NodePath("../../..")
+
+[node name="wall27" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 12.3188)
+skeleton = NodePath("../../..")
+
+[node name="wall28" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 10.7695)
+skeleton = NodePath("../../..")
+
+[node name="wall29" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 9.39866)
+skeleton = NodePath("../../..")
+
+[node name="wall30" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 7.88998)
+skeleton = NodePath("../../..")
+
+[node name="wall31" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 6.33301)
+skeleton = NodePath("../../..")
+
+[node name="wall32" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 4.78368)
+skeleton = NodePath("../../..")
+
+[node name="wall33" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 3.29591)
+skeleton = NodePath("../../..")
+
+[node name="wall34" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 1.78723)
+skeleton = NodePath("../../..")
+
+[node name="wall35" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 0.230263)
+skeleton = NodePath("../../..")
+
+[node name="wall36" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -1.31907)
+skeleton = NodePath("../../..")
+
+[node name="wall37" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -2.68991)
+skeleton = NodePath("../../..")
+
+[node name="wall38" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -4.19859)
+skeleton = NodePath("../../..")
+
+[node name="wall39" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -5.75556)
+skeleton = NodePath("../../..")
+
+[node name="wall40" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -7.30489)
+skeleton = NodePath("../../..")
+
+[node name="wall41" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -6.8997)
+skeleton = NodePath("../../..")
+
+[node name="wall42" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -8.40839)
+skeleton = NodePath("../../..")
+
+[node name="wall43" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -9.96535)
+skeleton = NodePath("../../..")
+
+[node name="wall44" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -11.5147)
+skeleton = NodePath("../../..")
+
+[node name="wall45" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -12.8855)
+skeleton = NodePath("../../..")
+
+[node name="wall46" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -14.3942)
+skeleton = NodePath("../../..")
+
+[node name="wall47" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -15.9512)
+skeleton = NodePath("../../..")
+
+[node name="wall48" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -17.5005)
+skeleton = NodePath("../../..")
+
+[node name="wall49" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -18.7023)
+skeleton = NodePath("../../..")
+
+[node name="wall50" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -20.211)
+skeleton = NodePath("../../..")
+
+[node name="wall51" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -21.7679)
+skeleton = NodePath("../../..")
+
+[node name="wall52" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -23.3173)
+skeleton = NodePath("../../..")
+
+[node name="wall53" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -24.6881)
+skeleton = NodePath("../../..")
+
+[node name="wall54" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -26.1968)
+skeleton = NodePath("../../..")
+
+[node name="wall55" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -27.7537)
+skeleton = NodePath("../../..")
+
+[node name="wall56" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -29.3031)
+skeleton = NodePath("../../..")
+
+[node name="wall57" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -28.8979)
+skeleton = NodePath("../../..")
+
+[node name="wall58" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -30.4066)
+skeleton = NodePath("../../..")
+
+[node name="wall59" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -31.9635)
+skeleton = NodePath("../../..")
+
+[node name="wall60" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -33.5129)
+skeleton = NodePath("../../..")
+
+[node name="wall61" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -34.8837)
+skeleton = NodePath("../../..")
+
+[node name="wall62" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -36.3924)
+skeleton = NodePath("../../..")
+
+[node name="wall63" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -37.9494)
+skeleton = NodePath("../../..")
+
+[node name="wall64" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -39.4987)
+skeleton = NodePath("../../..")
+
+[node name="wall65" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -40.6154)
+skeleton = NodePath("../../..")
+
+[node name="wall66" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -42.1241)
+skeleton = NodePath("../../..")
+
+[node name="wall67" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -43.6811)
+skeleton = NodePath("../../..")
+
+[node name="wall68" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -45.2304)
+skeleton = NodePath("../../..")
+
+[node name="wall69" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -46.6044)
+skeleton = NodePath("../../..")
+
+[node name="wall70" parent="building/Walls3" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -48.0877)
+skeleton = NodePath("../../..")
+
+[node name="Walls4" type="Node3D" parent="building"]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 0, 0, 0)
+
+[node name="wall1" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 47.5783)
+skeleton = NodePath("../../..")
+
+[node name="wall2" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 46.0696)
+skeleton = NodePath("../../..")
+
+[node name="wall3" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 44.5126)
+skeleton = NodePath("../../..")
+
+[node name="wall4" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 42.9633)
+skeleton = NodePath("../../..")
+
+[node name="wall5" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 41.5925)
+skeleton = NodePath("../../..")
+
+[node name="wall6" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 40.0838)
+skeleton = NodePath("../../..")
+
+[node name="wall7" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 38.5268)
+skeleton = NodePath("../../..")
+
+[node name="wall8" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 36.9775)
+skeleton = NodePath("../../..")
+
+[node name="wall9" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 37.3827)
+skeleton = NodePath("../../..")
+
+[node name="wall10" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 35.874)
+skeleton = NodePath("../../..")
+
+[node name="wall11" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 34.317)
+skeleton = NodePath("../../..")
+
+[node name="wall12" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 32.7677)
+skeleton = NodePath("../../..")
+
+[node name="wall13" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 31.3968)
+skeleton = NodePath("../../..")
+
+[node name="wall14" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 29.8882)
+skeleton = NodePath("../../..")
+
+[node name="wall15" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 28.3312)
+skeleton = NodePath("../../..")
+
+[node name="wall16" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 26.7819)
+skeleton = NodePath("../../..")
+
+[node name="wall17" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 25.5801)
+skeleton = NodePath("../../..")
+
+[node name="wall18" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 24.0714)
+skeleton = NodePath("../../..")
+
+[node name="wall19" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 22.5145)
+skeleton = NodePath("../../..")
+
+[node name="wall20" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 20.9651)
+skeleton = NodePath("../../..")
+
+[node name="wall21" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 19.5943)
+skeleton = NodePath("../../..")
+
+[node name="wall22" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 18.0856)
+skeleton = NodePath("../../..")
+
+[node name="wall23" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 16.5286)
+skeleton = NodePath("../../..")
+
+[node name="wall24" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 14.9793)
+skeleton = NodePath("../../..")
+
+[node name="wall25" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 15.3845)
+skeleton = NodePath("../../..")
+
+[node name="wall26" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 13.8758)
+skeleton = NodePath("../../..")
+
+[node name="wall27" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 12.3188)
+skeleton = NodePath("../../..")
+
+[node name="wall28" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 10.7695)
+skeleton = NodePath("../../..")
+
+[node name="wall29" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 9.39866)
+skeleton = NodePath("../../..")
+
+[node name="wall30" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 7.88998)
+skeleton = NodePath("../../..")
+
+[node name="wall31" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 6.33301)
+skeleton = NodePath("../../..")
+
+[node name="wall32" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 4.78368)
+skeleton = NodePath("../../..")
+
+[node name="wall33" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 3.29591)
+skeleton = NodePath("../../..")
+
+[node name="wall34" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 1.78723)
+skeleton = NodePath("../../..")
+
+[node name="wall35" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, 0.230263)
+skeleton = NodePath("../../..")
+
+[node name="wall36" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -1.31907)
+skeleton = NodePath("../../..")
+
+[node name="wall37" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -2.68991)
+skeleton = NodePath("../../..")
+
+[node name="wall38" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -4.19859)
+skeleton = NodePath("../../..")
+
+[node name="wall39" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -5.75556)
+skeleton = NodePath("../../..")
+
+[node name="wall40" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -7.30489)
+skeleton = NodePath("../../..")
+
+[node name="wall41" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -6.8997)
+skeleton = NodePath("../../..")
+
+[node name="wall42" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -8.40839)
+skeleton = NodePath("../../..")
+
+[node name="wall43" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -9.96535)
+skeleton = NodePath("../../..")
+
+[node name="wall44" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -11.5147)
+skeleton = NodePath("../../..")
+
+[node name="wall45" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -12.8855)
+skeleton = NodePath("../../..")
+
+[node name="wall46" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -14.3942)
+skeleton = NodePath("../../..")
+
+[node name="wall47" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -15.9512)
+skeleton = NodePath("../../..")
+
+[node name="wall48" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -17.5005)
+skeleton = NodePath("../../..")
+
+[node name="wall49" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -18.7023)
+skeleton = NodePath("../../..")
+
+[node name="wall50" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -20.211)
+skeleton = NodePath("../../..")
+
+[node name="wall51" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -21.7679)
+skeleton = NodePath("../../..")
+
+[node name="wall52" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -23.3173)
+skeleton = NodePath("../../..")
+
+[node name="wall53" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -24.6881)
+skeleton = NodePath("../../..")
+
+[node name="wall54" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -26.1968)
+skeleton = NodePath("../../..")
+
+[node name="wall55" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -27.7537)
+skeleton = NodePath("../../..")
+
+[node name="wall56" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -29.3031)
+skeleton = NodePath("../../..")
+
+[node name="wall57" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -28.8979)
+skeleton = NodePath("../../..")
+
+[node name="wall58" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -30.4066)
+skeleton = NodePath("../../..")
+
+[node name="wall59" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -31.9635)
+skeleton = NodePath("../../..")
+
+[node name="wall60" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -33.5129)
+skeleton = NodePath("../../..")
+
+[node name="wall61" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -34.8837)
+skeleton = NodePath("../../..")
+
+[node name="wall62" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -36.3924)
+skeleton = NodePath("../../..")
+
+[node name="wall63" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -37.9494)
+skeleton = NodePath("../../..")
+
+[node name="wall64" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -39.4987)
+skeleton = NodePath("../../..")
+
+[node name="wall65" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -40.6154)
+skeleton = NodePath("../../..")
+
+[node name="wall66" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -42.1241)
+skeleton = NodePath("../../..")
+
+[node name="wall67" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -43.6811)
+skeleton = NodePath("../../..")
+
+[node name="wall68" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -45.2304)
+skeleton = NodePath("../../..")
+
+[node name="wall69" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -46.6044)
+skeleton = NodePath("../../..")
+
+[node name="wall70" parent="building/Walls4" instance=ExtResource("3_qswwr")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -48.0877)
+skeleton = NodePath("../../..")
