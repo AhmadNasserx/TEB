@@ -22,7 +22,7 @@ func _physics_process(delta: float) -> void:
 	# Update animation and detection area rotation
 	_update_animation(input_vector)
 	_update_detection_area(input_vector)
-	if Input.is_action_just_pressed("shift") and in2Dscene:
+	if Input.is_action_just_pressed("shift") and in2Dscene and Home2d.is_visible_in_tree():
 		bubble_animation_player.play("bubble_transfer")
 		in2Dscene = false
 		await SceneManager.change_scene(str(Level.get_path()))

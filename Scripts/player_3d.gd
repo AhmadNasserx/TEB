@@ -15,28 +15,30 @@ func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
-		# Control the head rotation with mouse movement
-		control_head(event.relative.x * MOUSE_SENSITIVITY, event.relative.y * MOUSE_SENSITIVITY)
-	elif event is InputEventJoypadMotion:
-		# Handle joystick input for head movement
-		if event.axis == JOY_AXIS_RIGHT_X:
-			yaw_delta = event.axis_value * JOYSTICK_SENSITIVITY
-		elif event.axis == JOY_AXIS_RIGHT_Y:
-			pitch_delta = event.axis_value * JOYSTICK_SENSITIVITY
+	if Level.is_visible_in_tree():
+		if event is InputEventMouseMotion:
+			# Control the head rotation with mouse movement
+			control_head(event.relative.x * MOUSE_SENSITIVITY, event.relative.y * MOUSE_SENSITIVITY)
+		elif event is InputEventJoypadMotion:
+			# Handle joystick input for head movement
+			if event.axis == JOY_AXIS_RIGHT_X:
+				yaw_delta = event.axis_value * JOYSTICK_SENSITIVITY
+			elif event.axis == JOY_AXIS_RIGHT_Y:
+				pitch_delta = event.axis_value * JOYSTICK_SENSITIVITY
 
 func _physics_process(delta: float) -> void:
-	if Input.is_action_just_pressed("shift"):
-		await SceneManager.change_scene(str(Home2d.get_path()))
-		Level.hide()
-		Home2d.show()
+	if  Level.is_visible_in_tree():
+		if Input.is_action_just_pressed("shift"):
+			await SceneManager.change_scene(str(Home2d.get_path()))
+			Level.hide()
+			Home2d.show()
 
 	# Add the gravity
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
 	# Handle jump
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and is_on_floor() and Level.is_visible_in_tree():
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle movement/deceleration
