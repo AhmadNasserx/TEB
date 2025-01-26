@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=4 uid="uid://rl0le8s00vec"]
+[gd_scene load_steps=11 format=4 uid="uid://rl0le8s00vec"]
 
 [ext_resource type="Texture2D" uid="uid://bkjjw445qos0u" path="res://Assets/2D/Top-Down_Retro_Interior/TopDownHouse_FloorsAndWalls.png" id="1_aol2i"]
 [ext_resource type="PackedScene" uid="uid://cobgwefv3qsvq" path="res://Scenes/2D/player_2d.tscn" id="2_4r2je"]
 [ext_resource type="Texture2D" uid="uid://c2ihuniu21wg8" path="res://Assets/2D/Top-Down_Retro_Interior/TopDownHouse_FurnitureState2.png" id="2_6qak8"]
+[ext_resource type="PackedScene" uid="uid://5lut5akftofy" path="res://Scenes/bg.tscn" id="4_8wcc8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wow0n"]
 texture = ExtResource("1_aol2i")
@@ -611,3 +612,5 @@ tile_set = SubResource("TileSet_cupwq")
 y_sort_enabled = true
 position = Vector2(14, 47)
 scale = Vector2(1, 0.989474)
+
+[node name="BG" parent="." instance=ExtResource("4_8wcc8")]

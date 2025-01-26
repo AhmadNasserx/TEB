@@ -28,7 +28,7 @@ transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -
 shadow_enabled = true
 
 [node name="player3D" parent="." instance=ExtResource("1_jfma4")]
-transform = Transform3D(-0.956167, 0, -0.292822, 0, 1, 0, 0.292822, 0, -0.956167, 15.1222, 1.52068, 14.434)
+transform = Transform3D(-0.956167, 0, -0.292822, 0, 1, 0, 0.292822, 0, -0.956167, -13.4966, 1.52068, -18.1018)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.21952, 0.0555973, -0.981512)

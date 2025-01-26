@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1npwgwwcir78"]
+
+[ext_resource type="Script" path="res://Singeltons/audio_manager.gd" id="1_fdmb4"]
+[ext_resource type="AudioStream" uid="uid://cmidkv7rbkbyh" path="res://Assets/SFX/mysterious-piano-music-loop.mp3" id="2_6viy0"]
+
+[node name="AudioManager" type="Node"]
+script = ExtResource("1_fdmb4")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_6viy0")
+autoplay = true
