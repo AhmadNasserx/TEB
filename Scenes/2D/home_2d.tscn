@@ -449,8 +449,10 @@ texture = ExtResource("2_6qak8")
 12:7/0 = 0
 0:8/0 = 0
 0:8/0/z_index = 1
+0:8/0/y_sort_origin = -3
 1:8/0 = 0
 1:8/0/z_index = 1
+1:8/0/y_sort_origin = -3
 2:8/0 = 0
 3:8/0 = 0
 4:8/0 = 0
@@ -601,9 +603,11 @@ tile_set = SubResource("TileSet_o7pv6")
 
 [node name="TileMapLayer3" type="TileMapLayer" parent="."]
 y_sort_enabled = true
-tile_map_data = PackedByteArray("AAADAAAAAAAAAAcAAAADAAEAAAAAAAgAAAADAAIAAAAAAAkAAAAEAAAAAAABAAcAAAAEAAEAAAABAAgAAAAEAAIAAAABAAkAAAA=")
+scale = Vector2(1, 0.996146)
+tile_map_data = PackedByteArray("AAADAAAAAAAAAAcAAAADAAEAAAAAAAgAAAADAAIAAAAAAAkAAAAEAAAAAAABAAcAAAAEAAIAAAABAAkAAAAEAAEAAAABAAgAAAA=")
 tile_set = SubResource("TileSet_cupwq")
 
 [node name="player2D" parent="." instance=ExtResource("2_4r2je")]
 y_sort_enabled = true
-position = Vector2(12, 43)
+position = Vector2(14, 47)
+scale = Vector2(1, 0.989474)
