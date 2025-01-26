@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bj3uc4iatrsvw"]
+
+[ext_resource type="ArrayMesh" uid="uid://dypq11ohmxcli" path="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Misc/Electronics/Office_Misc_PC_01.obj" id="1_xhqsn"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0hwn8"]
+points = PackedVector3Array(-0.576348, 0.224349, -0.3, 0.2, 0.982098, -0.104295, 0.274608, 0.9, -0.105634, -0.6, 0.20251, -0.100308, -0.671805, 0.891449, -0.3, 0.262281, 0.319649, -0.3, -0.6, 0.993264, -0.100308, 0.186026, 0.967783, -0.3, -0.318086, 0.134127, -0.407113, 0.2, 0.212079, -0.104295, -0.7, 0.304689, -0.100777, -0.11506, 0.6, -0.374749, 0.293015, 0.303342, -0.1, -0.671805, 0.319649, -0.3, -0.576348, 0.967783, -0.3, -0.1, 0.167218, -0.395296, 0.262281, 0.891449, -0.3, -0.0913385, 0.134127, -0.180203, -0.684132, 0.9, -0.105634, 0.186026, 0.224349, -0.3, -0.294386, 0.6, -0.374749, -0.318086, 0.134127, -0.180203)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tgo3b"]
+points = PackedVector3Array(-0.0912699, 0.113484, -0.0976191, -0.318222, -0.0103175, -0.510317, -0.400794, -0.0103175, -0.407143, 0.0119047, -0.0103175, -0.180191, -0.0912699, 0.113484, -0.510317, -0.400794, 0.113484, -0.180191, -0.318222, -0.0103175, -0.0976191, -0.318222, 0.113484, -0.510317, -0.0912699, -0.0103175, -0.510317, 0.0119047, 0.113484, -0.407143, -0.318222, 0.134127, -0.180191, 0.0119047, 0.113484, -0.180191, 0.0119047, -0.0103175, -0.407143, -0.400794, 0.113484, -0.407143, -0.318222, 0.113484, -0.0976191, -0.0912699, -0.0103175, -0.0976191, -0.400794, -0.0103175, -0.180191, -0.1, 0.128016, -0.398413, -0.3, 0.123495, -0.391954, -0.107782, 0.122569, -0.2)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_f1xag"]
+points = PackedVector3Array(0.610317, 0.113492, 0.0881639, -0.710317, -0.0103175, -0.015037, -0.710317, 0.113492, -0.015037, -0.710317, -0.0103175, 0.418254, -0.710317, 0.113492, 0.418254, 0.610317, -0.0103175, 0.418254, 0.610317, -0.0103175, 0.0881639, 0.610317, 0.113492, 0.418254, 0.300713, 0.113492, -0.015037, 0.242261, 6.93889e-18, 0.0210706)
+
+[node name="PC" type="MeshInstance3D"]
+mesh = ExtResource("1_xhqsn")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_0hwn8")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_tgo3b")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_f1xag")

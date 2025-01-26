@@ -1,8 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://bp2ygqsmqe6lw"]
+[gd_scene load_steps=12 format=3 uid="uid://bp2ygqsmqe6lw"]
 
 [ext_resource type="PackedScene" uid="uid://bwuxxa4qu02xr" path="res://Scenes/3D/player_3d.tscn" id="1_jfma4"]
 [ext_resource type="PackedScene" uid="uid://bqyxvhtvgx8cg" path="res://Scenes/3D/cubicale/office_cubicle_piece_white_corner_03.tscn" id="2_rwqhv"]
 [ext_resource type="PackedScene" uid="uid://che6isamd7ttj" path="res://Scenes/3D/cubicale/office_cubicle_piece_white_edge_01.tscn" id="3_qswwr"]
+[ext_resource type="PackedScene" uid="uid://q3qwefhialmo" path="res://Scenes/3D/cubicale/office_cubicle_white_05.tscn" id="4_y6h3q"]
+[ext_resource type="PackedScene" uid="uid://dsnsihuouo70k" path="res://Scenes/3D/table/table.tscn" id="5_13lgx"]
+[ext_resource type="PackedScene" uid="uid://bmkft674i6y8f" path="res://Scenes/3D/chair/chair_white.tscn" id="6_jm3km"]
+[ext_resource type="PackedScene" uid="uid://cf0f7l0yb5jsl" path="res://Scenes/3D/objects/office_misc_fax.tscn" id="7_6l0da"]
+[ext_resource type="PackedScene" uid="uid://bj3uc4iatrsvw" path="res://Scenes/3D/objects/pc.tscn" id="8_a5oir"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7stvf"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -31,7 +36,7 @@ use_collision = true
 size = Vector3(100, 1, 100)
 
 [node name="player3D" parent="." instance=ExtResource("1_jfma4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.965545, 0)
+transform = Transform3D(-0.956167, 0, -0.292822, 0, 1, 0, 0.292822, 0, -0.956167, -48.167, 1.52068, -45.1106)
 
 [node name="building" type="Node3D" parent="."]
 
@@ -1182,4 +1187,25 @@ skeleton = NodePath("../../..")
 
 [node name="wall70" parent="building/Walls4" instance=ExtResource("3_qswwr")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 50.699, 0.5, -48.0877)
+skeleton = NodePath("../../..")
+
+[node name="cubicle1" type="Node3D" parent="building"]
+
+[node name="cubicle" parent="building/cubicle1" instance=ExtResource("4_y6h3q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.1447, 0.5, -48.2904)
+skeleton = NodePath("../../..")
+
+[node name="Table" parent="building/cubicle1" instance=ExtResource("5_13lgx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.2206, 0.5, -49.224)
+skeleton = NodePath("../../..")
+
+[node name="chairWhite" parent="building/cubicle1" instance=ExtResource("6_jm3km")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.9087, 0.5, -48.6129)
+skeleton = NodePath("../../../../..")
+
+[node name="OfficeMiscFax" parent="building/cubicle1" instance=ExtResource("7_6l0da")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -47.1083, 1.59735, -49.0791)
+
+[node name="PC" parent="building/cubicle1" instance=ExtResource("8_a5oir")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.5694, 1.64286, -49.3873)
 skeleton = NodePath("../../..")

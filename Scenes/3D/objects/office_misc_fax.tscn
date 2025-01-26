@@ -1,8 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://cf0f7l0yb5jsl"]
+[gd_scene load_steps=5 format=3 uid="uid://cf0f7l0yb5jsl"]
 
 [ext_resource type="ArrayMesh" uid="uid://wnjgv1p586fg" path="res://Assets/3D/3D Voxel Office Pack - Obj File_2/Misc/Electronics/Office_Misc_Fax.obj" id="1_2w71k"]
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3pu87"]
+points = PackedVector3Array(-0.609524, -0.00952381, -0.514276, 0.304762, 0.714286, -0.495195, 0.286835, 0.692997, -0.6, 0.609524, -0.00952381, -0.514276, -0.609524, 0.409487, -0.285714, 0.593484, 0, -0.289975, -0.394314, 0.692997, -0.6, 0.609524, 0.409487, -0.285714, -0.483935, 0.0117647, -0.6, -0.593484, 0, -0.289975, 0.514181, 0.314405, -0.609524, -0.418958, 0.618921, -0.380962, 0.483935, 0.0117647, -0.6, 0.498516, 0.5, -0.290647, -0.609524, 0.314405, -0.514276, 0.609524, 0.409487, -0.419061, -0.514181, 0.314405, -0.609524, -0.418958, 0.714286, -0.495195, 0.609524, 0.314405, -0.514276, -0.381991, 0.491204, -0.3, 0.304762, 0.618921, -0.380962, -0.609524, 0.409487, -0.419061)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ndin5"]
+points = PackedVector3Array(-0.586949, -2.77556e-17, -0.274427, -0.579138, 0.00329507, 0.2, -0.609524, 0.409516, 0.0190476, 0.586949, -2.77556e-17, -0.274427, 0.5, 0.49767, -0.277309, 0.495138, -2.77556e-17, 0.294137, 0.514181, 0.504762, 0.114271, -0.514181, 0.314271, 0.304717, -0.573696, 0.4, -0.2678, 0.609524, 0.314271, 0.209494, -0.4, 0.00211207, 0.310019, 0.514181, 0.314271, 0.304717, 0.380893, 0.504762, -0.285714, 0.609524, 0.409516, 0.0190476, 0.579138, 0.00329507, 0.2, 0.380893, 0.504762, 0.114271, 0.573696, 0.4, -0.2678, -0.609524, 0.314271, 0.209494, -0.514181, 0.409516, 0.114271, 0.293474, 0, 0.312522, -0.495138, -2.77556e-17, 0.294137)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0jkh5"]
+points = PackedVector3Array(0.304762, 0.219048, 0.609496, -0.388889, -1.38778e-17, 0.33574, -0.419048, 0.219048, 0.323837, -0.419048, 0.219048, 0.609496, 0.304762, 0.219048, 0.323837, 0.274603, -1.38778e-17, 0.597593, -0.388889, -1.38778e-17, 0.597593, 0.274603, -1.38778e-17, 0.33574)
+
 [node name="OfficeMiscFax" type="MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7432, 0.730273, -7.19619)
 mesh = ExtResource("1_2w71k")
 skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_3pu87")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_ndin5")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_0jkh5")
