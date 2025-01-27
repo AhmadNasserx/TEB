@@ -1,10 +1,11 @@
 extends Node2D
 @onready var bg: ParallaxBackground = $BG
+@onready var pi_m_ref: CanvasLayer = $"PiM ref"
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	pi_m_ref.hide()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=4 uid="uid://rl0le8s00vec"]
+[gd_scene load_steps=13 format=4 uid="uid://rl0le8s00vec"]
 
 [ext_resource type="Texture2D" uid="uid://bkjjw445qos0u" path="res://Assets/2D/Top-Down_Retro_Interior/TopDownHouse_FloorsAndWalls.png" id="1_aol2i"]
 [ext_resource type="Script" path="res://Scripts/home_2d.gd" id="1_asyri"]
 [ext_resource type="PackedScene" uid="uid://cobgwefv3qsvq" path="res://Scenes/2D/player_2d.tscn" id="2_4r2je"]
 [ext_resource type="Texture2D" uid="uid://c2ihuniu21wg8" path="res://Assets/2D/Top-Down_Retro_Interior/TopDownHouse_FurnitureState2.png" id="2_6qak8"]
 [ext_resource type="PackedScene" uid="uid://5lut5akftofy" path="res://Scenes/bg.tscn" id="4_8wcc8"]
+[ext_resource type="PackedScene" uid="uid://bkcsu63b24uex" path="res://Scenes/2D/pi_m_ref.tscn" id="6_e55tw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wow0n"]
 texture = ExtResource("1_aol2i")
@@ -722,3 +723,6 @@ scale = Vector2(1, 0.989474)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="collision/StaticBody2D"]
 polygon = PackedVector2Array(-37, 96, -35, -3, 227, -1, 230, 93, 286, 92, 284, 44, 348, 42, 351, -3, 482, -5, 485, 100, 437, 100, 437, 146, 355, 149, 355, 195, 157, 195, 158, 149, 94, 147, 92, 101, 39, 118, 87, 162, 149, 162, 149, 162, 153, 215, 372, 217, 372, 168, 454, 161, 451, 114, 512, 106, 492, -15, 338, -12, 339, 36, 270, 39, 277, 77, 239, 78, 241, -11, -56, -12, -57, 93, -27, 127, 91, 100)
+
+[node name="PiM ref" parent="." instance=ExtResource("6_e55tw")]
+visible = false
